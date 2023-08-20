@@ -1,0 +1,95 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.color_links {
+  color: #3B6064;
+}
+
+body header {
+  background-color: #F3FDFE;
+}
+
+body header nav .container div ul .active {
+  color: #05D35D;
+  border-bottom: 3px solid #05D35D;
+  padding-bottom: 36px;
+}
+
+body header nav .container div ul .link_color:hover {
+  color: #05D35D;
+  border-bottom: 3px solid #05D35D;
+  padding-bottom: 36px;
+}
+
+:root {
+  --width: 139px;
+  --height: 48px;
+}
+
+body header nav .container div ul li .button {
+  width: calc(0.9 * var(--width));
+  height: calc(0.9 * var(--height));
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+}
+body header nav .container div ul li .button span {
+  z-index: 10;
+}
+body header nav .container div ul li .button._3 {
+  background: #05D35D;
+}
+body header nav .container div ul li .button .back {
+  width: 0;
+  height: 0;
+  filter: url(#filter);
+  transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+}
+body header nav .container div ul li .button._3 .back {
+  left: -50%;
+  bottom: -50%;
+  background: black;
+}
+body header nav .container div ul li .button:hover .back {
+  width: calc(2 * var(--width));
+  height: calc(2 * var(--height));
+}
+
+body header nav .container div ul li .section_solutions {
+  top: 59px;
+  background-color: #E9F7F9;
+  border-top: 3px solid #05D35D;
+}
+
+body header nav .container div ul li .section_solutions div .border_title {
+  width: 40px;
+  border-bottom: 3px solid #05D35D;
+}
+
+body header nav .container div ul li .section_solutions .div_hr {
+  width: 2px;
+  background-color: rgba(5, 211, 94, 0.368627451);
+}
+
+body header nav .container .menu {
+  background-color: #3B6064;
+}
+
+body header nav .container div ul li .section_solutions div a .icon_size {
+  width: 18px;
+  height: 18px;
+}
+
+body header nav .container div ul li .section_solutions div a .text_hover:hover {
+  color: #05D35D !important;
+}
+
+@media (max-width: 1200px) and (min-width: 990px) {
+  body header nav .container div ul .link_color {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  body header nav .container div ul li .link_signin {
+    margin-left: 10px !important;
+  }
+}/*# sourceMappingURL=index.css.map */

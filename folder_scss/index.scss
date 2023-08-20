@@ -1,0 +1,110 @@
+@import "color";
+
+// start everyone
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.color_links {
+    color: $color_text_navbar;
+}
+
+// end everyone
+// start navbar
+body header {
+    background-color: $color_navbar;
+}
+
+body header nav .container div ul .active {
+    color: $color_button_navbar;
+    border-bottom: 3px solid $color_button_navbar;
+    padding-bottom: 36px;
+}
+
+body header nav .container div ul .link_color:hover {
+    color: $color_button_navbar;
+    border-bottom: 3px solid $color_button_navbar;
+    padding-bottom: 36px;
+}
+
+:root {
+    --width: 139px;
+    --height: 48px;
+}
+
+body header nav .container div ul li .button {
+    width: calc(0.9 * var(--width));
+    height: calc(0.9 * var(--height));
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0, 0.22, .3, 1);
+
+    span {
+        z-index: 10;
+    }
+
+    &._3 {
+        background: $color_button_navbar;
+    }
+
+    .back {
+        width: 0;
+        height: 0;
+        filter: url(#filter);
+        transition: all 2.5s cubic-bezier(0.1, 0.22, .3, 1);
+    }
+
+    &._3 .back {
+        left: -50%;
+        bottom: -50%;
+        background: $color_black;
+    }
+
+    &:hover .back {
+        width: calc(2 * var(--width));
+        height: calc(2 * var(--height));
+    }
+}
+
+body header nav .container div ul li .section_solutions {
+    top: 59px;
+    background-color: $color_navbar_hover;
+    border-top: 3px solid $color_button_navbar;
+}
+
+body header nav .container div ul li .section_solutions div .border_title {
+    width: 40px;
+    border-bottom: 3px solid $color_button_navbar;
+}
+
+body header nav .container div ul li .section_solutions .div_hr {
+    width: 2px;
+    background-color: #05d35e5e;
+}
+
+body header nav .container .menu {
+    background-color: $color_text_navbar;
+}
+
+body header nav .container div ul li .section_solutions div a .icon_size {
+    width: 18px;
+    height: 18px;
+}
+
+body header nav .container div ul li .section_solutions div a .text_hover:hover {
+    color: $color_button_navbar !important;
+}
+
+// end navbar
+// start media
+@media (max-width: 1200px) and (min-width: 990px) {
+    body header nav .container div ul .link_color {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    body header nav .container div ul li .link_signin {
+        margin-left: 10px !important;
+    }
+}
+
+// end media
