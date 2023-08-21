@@ -9,22 +9,30 @@ body {
     color: $color_text_navbar;
 }
 
+.active {
+    color: $color_button_navbar;
+    border-bottom: 3px solid $color_button_navbar;
+    padding-bottom: 25px;
+}
+
+.link_color:hover {
+    color: $color_button_navbar;
+    border-bottom: 3px solid $color_button_navbar;
+    padding-bottom: 25px;
+}
+
+.icon_top {
+    transition: 0.5s;
+}
+
 // end everyone
 // start navbar
 body header {
     background-color: $color_navbar;
 }
 
-body header nav .container div ul .active {
-    color: $color_button_navbar;
-    border-bottom: 3px solid $color_button_navbar;
-    padding-bottom: 36px;
-}
-
-body header nav .container div ul .link_color:hover {
-    color: $color_button_navbar;
-    border-bottom: 3px solid $color_button_navbar;
-    padding-bottom: 36px;
+body header nav .container div ul {
+    gap: 45px;
 }
 
 :root {
@@ -50,7 +58,7 @@ body header nav .container div ul li .button {
         width: 0;
         height: 0;
         filter: url(#filter);
-        transition: all 2.5s cubic-bezier(0.1, 0.22, .3, 1);
+        transition: all 2s cubic-bezier(0.1, 0.22, .3, 1);
     }
 
     &._3 .back {
@@ -66,37 +74,46 @@ body header nav .container div ul li .button {
 }
 
 body header nav .container div ul li .section_solutions {
-    top: 59px;
+    top: 105px;
     background-color: $color_navbar_hover;
     border-top: 3px solid $color_button_navbar;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
 }
 
-body header nav .container div ul li .section_solutions div .border_title {
+body header nav .container div ul li .section_solutions:hover,
+body header nav .container div ul li:hover>.section_solutions {
+    top: 47px;
+    opacity: 1;
+    z-index: 1;
+}
+
+body header nav .container div ul li .section_solutions ul .border_title {
     width: 40px;
     border-bottom: 3px solid $color_button_navbar;
 }
 
 body header nav .container div ul li .section_solutions .div_hr {
     width: 2px;
-    background-color: #05d35e5e;
+    background-color: #05d35e2a;
 }
 
 body header nav .container .menu {
     background-color: $color_text_navbar;
 }
 
-body header nav .container div ul li .section_solutions div a .icon_size {
-    width: 18px;
-    height: 18px;
-}
-
-body header nav .container div ul li .section_solutions div a .text_hover:hover {
+body header .navbar .container div ul li .section_solutions ul li .text_hover:hover {
     color: $color_button_navbar !important;
 }
 
 // end navbar
 // start media
 @media (max-width: 1200px) and (min-width: 990px) {
+    body header nav .container div ul {
+        gap: 3px;
+    }
+
     body header nav .container div ul .link_color {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -104,6 +121,51 @@ body header nav .container div ul li .section_solutions div a .text_hover:hover 
 
     body header nav .container div ul li .link_signin {
         margin-left: 10px !important;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 0) {
+    body header {
+        background-color: $color_white;
+    }
+
+    body header nav .container div ul li .active {
+        color: $color_button_navbar;
+        border-bottom: 0px solid transparent;
+        padding-bottom: 0;
+    }
+
+    body header nav .container div ul {
+        gap: 20px;
+    }
+
+    body header nav .container div ul .li_overflow:hover {
+        height: 500px;
+        background-color: $color_navbar_hover;
+    }
+
+    body header nav .container div ul .li_height:hover {
+        height: 250px;
+        background-color: $color_navbar_hover;
+    }
+
+    body header nav .container div ul .li_overflow:hover .icon_top {
+        color: $color_button_navbar;
+        transform: rotate(90deg);
+    }
+
+    body header nav .container div ul li .section_solutions {
+        top: 0;
+        border-top: 0px solid $color_button_navbar;
+    }
+
+    body header nav .container div ul li .section_solutions ul .border_title {
+        border-bottom: 0px solid $color_button_navbar;
+    }
+
+    body header nav .container div ul li .button {
+        width: calc(1.4 * var(--width));
+        height: calc(0.9 * var(--height));
     }
 }
 
