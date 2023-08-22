@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link class="link" rel="icon" href="https://lynnc.io/assets/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <title>LYNNC</title>
+</head>
+
+<body class="text-capitalize">
+    <!-- start navbar -->
+    <header class="position-fixed w-100 py-2">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container px-0">
+                <a href="#" class="ms-3 ms-lg-0">
+                    <img src="images/images_home/image_logo.png" alt="" class="logo_media">
+                </a>
+                <button id="button_click" class="navbar-toggler menu text-white me-3 me-lg-0 py-2 rounded-3"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <i class="fas fa-bars" id="menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-4 mt-md-0 align-items-start align-items-lg-center">
+                        <li class="nav-item position-relative px-3 px-lg-0">
+                            <a id="link_color"
+                                class="text-decoration-none px-0 px-md-2 fw-bold color_links active active_mobile mt-2"
+                                href="#">home</a>
+                        </li>
+                        <li class="nav-item position-relative w-100 li_overflow px-3 px-lg-0">
+                            <div
+                                class="d-flex d-lg-block justify-content-between align-items-center div_section_block mt-2 mt-lg-0">
+                                <a class="text-decoration-none link_color color_links px-0 px-lg-2 fw-bold"
+                                    href="#">Solutions</a>
+                                <i class="fas fa-chevron-right d-block d-lg-none icon_top"></i>
+                            </div>
+                            <section
+                                class="position-absolute section_solutions d-none p-0 pb-3 p-lg-4 gap-3 gap-lg-5 flex-column flex-lg-row">
+                                <ul class="me-5 d-flex flex-column list-unstyled gap-3">
+                                    <h2 class="fw-bold fs-5 border_title color_links">Features</h2>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Order Management</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Analytics</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Menu Engineering</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Order Tracking</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Connect your own app</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="div_hr my-1 d-none d-lg-block"></div>
+                                <ul class="me-5 d-flex flex-column gap-3 list-unstyled">
+                                    <h2 class="fw-bold fs-5 border_title color_links">Products</h2>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Link</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Cloud Kitchen</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Cloud Shelf</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Kitchen Display System</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Captain Delivery</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="nav-item position-relative w-100 li_overflow px-3 px-lg-0">
+                            <div
+                                class="d-flex d-lg-block justify-content-between align-items-center div_section_block mt-2 mt-lg-0">
+                                <a class="text-decoration-none link_color color_links px-0 px-lg-2 fw-bold"
+                                    href="#">Integrations</a>
+                                <i class="fas fa-chevron-right d-block d-lg-none icon_top"></i>
+                            </div>
+                            <section
+                                class="position-absolute section_solutions d-none p-0 pb-3 p-lg-4 gap-3 gap-lg-5 flex-column flex-lg-row">
+                                <ul class="me-5 d-flex flex-column list-unstyled gap-3">
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">POS Integration</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Delivery Platform</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Mobile Applications</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Fleet Solutions</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">E-Commerce</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="nav-item position-relative px-3 px-lg-0">
+                            <a class="text-decoration-none link_color color_links px-0 px-md-2 fw-bold mt-2"
+                                href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item position-relative w-100 li_overflow px-3 px-lg-0">
+                            <div
+                                class="d-flex d-lg-block justify-content-between align-items-center div_section_block mt-2 mt-lg-0">
+                                <a class="text-decoration-none link_color color_links px-0 px-lg-2 fw-bold"
+                                    href="#">Resources</a>
+                                <i class="fas fa-chevron-right d-block d-lg-none icon_top"></i>
+                            </div>
+                            <section
+                                class="position-absolute section_solutions d-none p-0 pb-3 p-lg-4 gap-3 gap-lg-5 flex-column flex-lg-row">
+                                <ul class="me-5 d-flex flex-column list-unstyled gap-3">
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Case Studies</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Support</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">User Success</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Blogs</h3>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex gap-2 align-items-center text-decoration-none color_links text_hover"
+                                            href="#">
+                                            <i class="fas fa-chevron-right"></i>
+                                            <h3 class="fs-6 text-nowrap fw-bold mb-0">Contact us</h3>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </li>
+                        <li class="nav-item position-relative px-3 px-lg-0">
+                            <a class="text-decoration-none link_color color_links px-0 px-md-2 fw-bold mt-2 mt-lg-0"
+                                href="#">About</a>
+                        </li>
+                        <li
+                            class="nav-item position-relative px-3 px-lg-0 d-flex flex-row align-items-center gap-5 gap-lg-4">
+                            <a href="#"
+                                class="overflow-hidden link_button button_navbar position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
+                                <span class="text-white fw-bold size_button">demo</span>
+                            </a>
+                            <a class="text-decoration-none color_links link_signin fw-bold text-nowrap" href="#">
+                                Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end navbar -->
+    <!-- start main -->
+    <section class="section_main_home element_height position-relative">
+        <div class="div_background w-100 position-absolute">
+            <div class="container container_padding element_height d-flex align-items-start align-items-lg-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="position-relative">
+                            <h2 class="fw-bold text-white size_main_home"><span class="span_color">The
+                                    Best Solution</span> to manage all your online <span
+                                    class="span_color">orders!</span>
+                            </h2>
+                        </div>
+                        <div class="d-none d-lg-flex gap-4 mt-4 align-items-center">
+                            <a href="#"
+                                class="overflow-hidden link_button position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
+                                <span class="text-white fw-bold size_button">get to demo</span>
+                            </a>
+                            <a href="#"
+                                class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                <img src="images/images_home/icon_video.svg" alt="">
+                            </a>
+                            <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-end">
+                            <img src="images/images_home/imagehome.png" alt="" class="image_responsve">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute rounded-5 start-50 div_bottom d-flex align-items-center justify-content-center mouse_click"
+            id="icon_top">
+            <img src="images/images_home/icon_bottom.svg" alt="">
+        </div>
+    </section>
+    <!-- end main -->
+    <!-- start carousel -->
+    <section class="mt-5 pt-4 section_point position-relative">
+        <div class="container">
+            <div class="row carousel slide align-items-center" id="carouselExampleIndicators">
+                <div class="col-md-6">
+                    <div class="row align-items-center mouse_click row_hover active"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true"
+                        aria-label="Slide 1">
+                        <div class="col-2">
+                            <h2 class="number_carousel fw-bold">01</h2>
+                        </div>
+                        <div class="col-2">
+                            <div
+                                class="rounded-circle active_carousel div_icon d-flex align-items-center justify-content-center">
+                                <img src="images/images_home/icon_management.svg" alt="" class="icon_size">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h2 class="color_links title_mobile text-nowrap active_title fw-bold">Management</h2>
+                            <h3 class="title_size">Aggregate all your online orders</h3>
+                        </div>
+                    </div>
+                    <div class="border_bottom my-4"></div>
+                    <div class="row align-items-center mouse_click row_hover"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true"
+                        aria-label="Slide 2">
+                        <div class="col-2">
+                            <h2 class="number_carousel fw-bold">02</h2>
+                        </div>
+                        <div class="col-2">
+                            <div class="rounded-circle div_icon d-flex align-items-center justify-content-center">
+                                <img src="images/images_home/icon_menu.svg" alt="" class="icon_size">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h2 class="color_links title_mobile text-nowrap fw-bold">Menu & stock</h2>
+                            <h3 class="title_size">update all your online menus</h3>
+                        </div>
+                    </div>
+                    <div class="border_bottom my-4"></div>
+                    <div class="row align-items-center mouse_click row_hover"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true"
+                        aria-label="Slide 3">
+                        <div class="col-2">
+                            <h2 class="number_carousel fw-bold">03</h2>
+                        </div>
+                        <div class="col-2">
+                            <div class="rounded-circle div_icon d-flex align-items-center justify-content-center">
+                                <img src="images/images_home/icon_instghts.svg" alt="" class="icon_size">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h2 class="color_links title_mobile text-nowrap fw-bold">Insights</h2>
+                            <h3 class="title_size">insightful analytics and reporting</h3>
+                        </div>
+                    </div>
+                    <div class="border_bottom my-4"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="carousel-inner">
+                        <div class="text-center text-md-end carousel-item active">
+                            <div class="position-relative">
+                                <img src="images/images_home/image_back.png" alt=""
+                                    class="position-absolute image_carousel">
+                            </div>
+                            <img src="images/images_home/image_desktop.png" alt="" class="size_carousel">
+                        </div>
+                        <div class="text-center text-md-end carousel-item">
+                            <div class="position-relative">
+                                <img src="images/images_home/image_back.png" alt=""
+                                    class="position-absolute image_carousel">
+                            </div>
+                            <img src="images/images_home/image_analytics.png" alt="" class="size_carousel">
+                        </div>
+                        <div class="text-center text-md-end carousel-item">
+                            <div class="position-relative">
+                                <img src="images/images_home/image_back.png" alt=""
+                                    class="position-absolute image_carousel">
+                            </div>
+                            <img src="images/images_home/image_food.png" alt="" class="size_carousel">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+    <p>hi</p>
+</body>
+<script src="bootstrap-5.2.2-dist/js/jquery.min.js"></script>
+<script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-5.2.2-dist/js/home_page.js"></script>
+
+</html>

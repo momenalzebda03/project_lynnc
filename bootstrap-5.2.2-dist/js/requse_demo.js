@@ -62,13 +62,51 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-var tag_header = document.querySelectorAll(".div_circle");
+var tag_header = document.querySelectorAll(".col_child");
+var mouse_click = document.querySelectorAll(".mouse_click");
+var div_width = document.querySelectorAll(".div_width");
+var span_online = document.querySelectorAll(".span_online");
 for (let i = 0; i < tag_header.length; i++) {
   var chekd = tag_header[i];
   chekd.addEventListener("click", function () {
-    for (let i = 0; i < tag_header.length; i++) {
-      tag_header[i].classList.remove("active");
+    for (let i = 0; i < mouse_click.length; i++) {
+      mouse_click[i].classList.remove("active_bottom");
     }
-    this.classList.add("active");
+    this.querySelector(".mouse_click").classList.add("active_bottom");
+
+    for (let i = 0; i < div_width.length; i++) {
+      div_width[i].classList.remove("border_active");
+    }
+    this.querySelector(".div_width").classList.add("border_active");
+
+    for (let i = 0; i < span_online.length; i++) {
+      span_online[i].classList.remove("active_online");
+    }
+    this.querySelector(".span_online").classList.add("active_online");
   });
 }
+
+var divCircles = document.querySelectorAll(".div_circle");
+divCircles.forEach(function (circle, index) {
+  circle.addEventListener("click", function () {
+    mouse_click.forEach(function (item) {
+      item.classList.remove("active_bottom");
+    });
+    div_width.forEach(function (item) {
+      item.classList.remove("border_active");
+    });
+    span_online.forEach(function (item) {
+      item.classList.remove("active_online");
+    });
+    var correspondingMouseClickItem = document.querySelector(
+      `.mouse_click[data-bs-slide-to="${index}"]`
+    );
+    correspondingMouseClickItem.classList.add("active_bottom");
+    var correspondingDivWidthItem =
+      correspondingMouseClickItem.querySelector(".div_width");
+    correspondingDivWidthItem.classList.add("border_active");
+    var correspondingSpanOnlineItem =
+      correspondingMouseClickItem.querySelector(".span_online");
+    correspondingSpanOnlineItem.classList.add("active_online");
+  });
+});

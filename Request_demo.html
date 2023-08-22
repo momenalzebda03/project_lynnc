@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/index.css">
     <title>LYNNC</title>
 </head>
@@ -229,9 +228,8 @@
                         <li
                             class="nav-item position-relative px-3 px-lg-0 d-flex flex-row align-items-center gap-5 gap-lg-4">
                             <a href="#"
-                                class="overflow-hidden button _3 position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
-                                <span class="text-white fs-5">demo</span>
-                                <div class="back position-absolute rounded-circle"></div>
+                                class="overflow-hidden link_button button_navbar position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
+                                <span class="text-white fw-bold size_button">demo</span>
                             </a>
                             <a class="text-decoration-none color_links link_signin fw-bold text-nowrap" href="#">
                                 Sign In</a>
@@ -243,12 +241,12 @@
     </header>
     <!-- end navbar -->
     <!-- start main -->
-    <section class="section_main">
-        <div class="container h-100">
-            <div class="row">
-                <div class="col-6">
-                    <div class="div_image d-flex align-items-start align-items-lg-center div_center mt-5 mt-lg-0 carousel"
-                        id="carouselExampleIndicators" data-bs-ride="carousel">
+    <section class="section_main element_height">
+        <div class="container container_mobile px-0 px-lg-3 h-100">
+            <div class="row image_responsve">
+                <div>
+                    <div class="div_image d-flex align-items-start align-items-lg-center div_center element_height mt-5 mt-lg-0 carousel justify-content-start justify-content-lg-center"
+                        id="carouselExampleIndicators">
                         <div class="position-absolute div_left div_top d-none d-lg-block">
                             <div class="carousel-indicators d-flex flex-column align-items-center gap-4">
                                 <div class="active div_circle rounded-circle position-relative"
@@ -265,61 +263,183 @@
                                     aria-label="Slide 4"></div>
                             </div>
                         </div>
-                        <div class="mt-5 mt-lg-0 carousel-inner carousel_text ps-2" id="carouselInner1">
+                        <div class="mt-5 mt-lg-0 ms-0 carousel_text">
                             <div class="carousel-item active">
-                                <h1 class="title_number fw-bold">01</h1>
-                                <h2 class="fw-bold text-white size_main mt-5 mt-lg-0"><span class="span_color">The
-                                        Best Solution</span> to manage all your online <span
-                                        class="span_color">orders!</span>
-                                </h2>
-                                <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
-                                    <a href="#"
-                                        class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
-                                        <img src="images/images_home/icon_video.svg" alt="">
-                                    </a>
-                                    <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="ms-3 ms-lg-0">
+                                            <h1 class="title_number fw-bold">01</h1>
+                                            <h2 class="fw-bold text-white size_main mt-3 mt-lg-0"><span
+                                                    class="span_color">The Best Solution</span> to manage all your
+                                                online
+                                                <span class="span_color">orders!</span>
+                                            </h2>
+                                            <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
+                                                <a href="#"
+                                                    class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                    <img src="images/images_home/icon_video.svg" alt="">
+                                                </a>
+                                                <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="images/images_home/image_main.png" alt=""
+                                            class="element_height image_position image_cover col_index">
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <h1 class="title_number fw-bold">02</h1>
-                                <h2 class="fw-bold text-white size_main mt-5 mt-lg-0"><span class="span_color">The
-                                        Best Solution</span> to manage all your online <span
-                                        class="span_color">orders!</span>
-                                </h2>
-                                <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
-                                    <a href="#"
-                                        class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
-                                        <img src="images/images_home/icon_video.svg" alt="">
-                                    </a>
-                                    <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="ms-3 ms-lg-0">
+                                            <h1 class="title_number fw-bold">02</h1>
+                                            <h2 class="fw-bold text-white size_main mt-3 mt-lg-0"><span
+                                                    class="span_color">The Best Solution</span> to manage all your
+                                                online
+                                                <span class="span_color">orders!</span>
+                                            </h2>
+                                            <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
+                                                <a href="#"
+                                                    class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                    <img src="images/images_home/icon_video.svg" alt="">
+                                                </a>
+                                                <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="images/images_home/image_main1.png" alt=""
+                                            class="element_height image_position image_cover col_index">
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <h1 class="title_number fw-bold">03</h1>
-                                <h2 class="fw-bold text-white size_main mt-5 mt-lg-0"><span class="span_color">The
-                                        Best Solution</span> to manage all your online <span
-                                        class="span_color">orders!</span>
-                                </h2>
-                                <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
-                                    <a href="#"
-                                        class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
-                                        <img src="images/images_home/icon_video.svg" alt="">
-                                    </a>
-                                    <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="ms-3 ms-lg-0">
+                                            <h1 class="title_number fw-bold">03</h1>
+                                            <h2 class="fw-bold text-white size_main mt-3 mt-lg-0"><span
+                                                    class="span_color">The Best Solution</span> to manage all your
+                                                online
+                                                <span class="span_color">orders!</span>
+                                            </h2>
+                                            <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
+                                                <a href="#"
+                                                    class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                    <img src="images/images_home/icon_video.svg" alt="">
+                                                </a>
+                                                <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="images/images_home/image_main.png" alt=""
+                                            class="element_height image_position image_cover col_index">
+                                    </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <h1 class="title_number fw-bold">04</h1>
-                                <h2 class="fw-bold text-white size_main mt-5 mt-lg-0"><span class="span_color">The
-                                        Best Solution</span> to manage all your online <span
-                                        class="span_color">orders!</span>
-                                </h2>
-                                <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
-                                    <a href="#"
-                                        class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
-                                        <img src="images/images_home/icon_video.svg" alt="">
-                                    </a>
-                                    <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                <div class="row w-100 align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="ms-3 ms-lg-0">
+                                            <h1 class="title_number fw-bold">04</h1>
+                                            <h2 class="fw-bold text-white size_main mt-3 mt-lg-0"><span
+                                                    class="span_color">The Best Solution</span> to manage all your
+                                                online
+                                                <span class="span_color">orders!</span>
+                                            </h2>
+                                            <div class="d-none d-lg-flex gap-4 mt-4 align-items-center mb-5 pb-5">
+                                                <a href="#"
+                                                    class="icon_background rounded-circle d-flex align-items-center justify-content-center position-relative">
+                                                    <img src="images/images_home/icon_video.svg" alt="">
+                                                </a>
+                                                <h5 class="span_color fw-bold animation_text">Watch Now</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <img src="images/images_home/image_main1.png" alt=""
+                                            class="element_height image_position image_cover col_index">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end pb-5 element_height div_height_res">
+                                <div
+                                    class="d-flex row_bottom align-items-start align-items-lg-center rounded-2 position-relative">
+                                    <div class="col-6 col-lg-3 col_child">
+                                        <div class="position-relative active_bottom d-flex align-items-center mouse_click"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                            aria-current="true" aria-label="Slide 1">
+                                            <div
+                                                class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width border_active">
+                                                <div>
+                                                    <img src="images/images_home/image_main2.png" alt=""
+                                                        class="image_width">
+                                                </div>
+                                                <div>
+                                                    <h2 class="text-white fw-bold text_one">step 1</h2>
+                                                    <h3 class="text_tow fw-bold"><span
+                                                            class="active_online span_online">Online</span>
+                                                        Ordering</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3 col_child">
+                                        <div class="position-relative d-flex align-items-center mouse_click"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                            aria-current="true" aria-label="Slide 2">
+                                            <div
+                                                class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
+                                                <div>
+                                                    <img src="images/images_home/image_main3.png" alt=""
+                                                        class="image_width">
+                                                </div>
+                                                <div>
+                                                    <h2 class="text-white fw-bold text_one">step 2</h2>
+                                                    <h3 class="text_tow fw-bold"><span class="span_online">Online</span>
+                                                        Ordering</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3 col_child">
+                                        <div class="position-relative d-flex align-items-center mouse_click"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                            aria-current="true" aria-label="Slide 3">
+                                            <div
+                                                class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
+                                                <div>
+                                                    <img src="images/images_home/image_main4.png" alt=""
+                                                        class="image_width">
+                                                </div>
+                                                <div>
+                                                    <h2 class="text-white fw-bold text_one">step 3</h2>
+                                                    <h3 class="text_tow fw-bold"><span class="span_online">Online</span>
+                                                        Ordering</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-lg-3 col_child">
+                                        <div class="position-relative d-flex align-items-center mouse_click"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                            aria-current="true" aria-label="Slide 4">
+                                            <div
+                                                class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
+                                                <div>
+                                                    <img src="images/images_home/image_main5.png" alt=""
+                                                        class="image_width">
+                                                </div>
+                                                <div>
+                                                    <h2 class="text-white fw-bold text_one">step 4</h2>
+                                                    <h3 class="text_tow fw-bold"><span class="span_online">Online</span>
+                                                        Ordering</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -335,10 +455,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-0 icon_index">
                     <div class="div_image_right">
-                        <img src="images/images_home/image_main.png" alt=""
-                            class="image_right image_cover position-absolute end-0 h-100 w-50">
                         <div class="position-absolute div_right d-none d-lg-flex flex-column align-items-center">
                             <ul
                                 class="d-flex gap-3 align-items-center flex-column position-absolute text-white list-unstyled">
@@ -377,68 +495,12 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex row_bottom align-items-start align-items-lg-center rounded-2 position-relative">
-                <div class="col-6 col-lg-3 col_child">
-                    <div class="position-relative d-flex align-items-center mouse_click">
-                        <div class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
-                            <div>
-                                <img src="images/images_home/image_main2.png" alt="" class="image_width">
-                            </div>
-                            <div>
-                                <h2 class="text-white fw-bold text_one">step 1</h2>
-                                <h3 class="text_tow fw-bold"><span>Online</span> Ordering</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col_child">
-                    <div class="position-relative div_active d-flex align-items-center mouse_click">
-                        <div
-                            class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width border_active">
-                            <div>
-                                <img src="images/images_home/image_main3.png" alt="" class="image_width">
-                            </div>
-                            <div>
-                                <h2 class="text-white fw-bold text_one">step 2</h2>
-                                <h3 class="text_tow fw-bold"><span class="active_online">Online</span> Ordering</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col_child">
-                    <div class="position-relative d-flex align-items-center mouse_click">
-                        <div class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
-                            <div>
-                                <img src="images/images_home/image_main4.png" alt="" class="image_width">
-                            </div>
-                            <div>
-                                <h2 class="text-white fw-bold text_one">step 3</h2>
-                                <h3 class="text_tow fw-bold"><span>Online</span> Ordering</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 col_child">
-                    <div class="position-relative d-flex align-items-center mouse_click">
-                        <div class="d-flex align-items-center gap-3 border-bottom border-3 pb-0 pb-lg-3 mx-3 div_width">
-                            <div>
-                                <img src="images/images_home/image_main5.png" alt="" class="image_width">
-                            </div>
-                            <div>
-                                <h2 class="text-white fw-bold text_one">step 4</h2>
-                                <h3 class="text_tow fw-bold"><span>Online</span> Ordering</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- end main -->
 </body>
 <script src="bootstrap-5.2.2-dist/js/jquery.min.js"></script>
 <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
-<script src="bootstrap-5.2.2-dist/js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="bootstrap-5.2.2-dist/js/requse_demo.js"></script>
 
 </html>
