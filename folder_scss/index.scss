@@ -21,13 +21,13 @@ body header nav .container div ul li .active:hover,
 body header nav .container div ul li .active {
     color: $color_button_navbar;
     border-bottom: 3px solid $color_button_navbar;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
 }
 
 .link_color:hover {
     color: $color_button_navbar;
     border-bottom: 3px solid $color_button_navbar;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
 }
 
 .icon_top {
@@ -42,9 +42,9 @@ body header nav .container div ul li .active {
     cursor: pointer;
 }
 
-// .image_object {
-//     object-fit: cover;
-// }
+.image_cover {
+    object-fit: cover;
+}
 
 // end everyone
 // start navbar
@@ -130,15 +130,14 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
 
 // end navbar
 // start main
-.div_center,
-.section_main {
+body .section_main .container .row div .div_center,
+body .section_main {
     width: 100%;
     height: 100vh;
 }
 
-.div_image::after,
-.div_image:before,
-.div_image_right:before {
+body .section_main .container .row div .div_image:before,
+body .section_main .container .row div .div_image_right:before {
     content: "";
     background-size: 50% 100vh;
     position: absolute;
@@ -147,46 +146,41 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     z-index: -1;
 }
 
-.div_image::after {
-    background-image: url("/images/images_home/image_main.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh !important;
-    z-index: -1;
-    right: 0;
-    top: 0;
-}
-
-.div_image:before {
+body .section_main .container .row div .div_image:before {
     background-image: url("/images/images_home/image_left.png");
     left: 0;
 }
 
-.div_image_right:before {
+body .section_main .container .row div .div_image_right:before {
     background-color: $color_image_main;
     z-index: 1;
     right: 0;
 }
 
-.title_number {
+body .section_main .container .row div .div_image .carousel_text div .title_number {
     color: #f3fdfeb4;
     font-size: 107.28px;
 }
 
-.div_left {
+body .section_main .container .row div .div_center .div_top {
+    margin-top: 250px;
+}
+
+body .section_main .container .row div .div_left {
     left: 3%;
 }
 
-.div_left div .div_circle {
+body .section_main .container .row div .div_left div .div_circle {
     cursor: pointer;
     width: 10px;
     height: 10px;
 }
 
-.div_left .active {
+body .section_main .container .row div .div_left div .active {
     background-color: $color_button_navbar !important;
 }
 
-.div_left .active::before {
+body .section_main .container .row div .div_left div .active::before {
     content: "";
     position: absolute;
     width: 26px;
@@ -197,26 +191,26 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     border: 2px solid $color_button_navbar;
 }
 
-.size_main {
+body .section_main .container .row div .div_center .carousel_text div .size_main {
     width: 410px;
     font-size: 47.3px;
 }
 
-.icon_background {
+body .section_main .container .row div .div_center .carousel_text div div .icon_background {
     cursor: pointer;
     width: 48px;
     height: 48px;
     background-color: $color_button_navbar;
 }
 
-.icon_background::before,
-.icon_background::after {
+body .section_main .container .row div .div_center .carousel_text div div .icon_background::before,
+body .section_main .container .row div .div_center .carousel_text div div .icon_background::after {
     content: "";
     position: absolute;
     border-radius: 50%;
 }
 
-.icon_background::before {
+body .section_main .container .row div .div_center .carousel_text div div .icon_background::before {
     width: 61px;
     height: 61px;
     border: 1px solid $color_button_navbar;
@@ -243,7 +237,7 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.icon_background::after {
+body .section_main .container .row div .div_center .carousel_text div div .icon_background::after {
     width: 78px;
     height: 78px;
     border: 1px solid #05d35e44;
@@ -267,7 +261,7 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.animation_text {
+body .section_main .container .row div .div_center .carousel_text div div .animation_text {
     animation: animation_text 2s infinite;
 }
 
@@ -288,13 +282,13 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.div_mouse {
+body .section_main .container .row div div .div_mouse {
     top: -150px;
     width: 30px;
     height: 50px;
 }
 
-.div_mouse::before {
+body .section_main .container .row div div .div_mouse::before {
     content: "";
     position: absolute;
     width: 2px;
@@ -317,15 +311,15 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.div_arraow {
+body .section_main .container .row div div .div_mouse .div_arraow {
     margin-top: 130px;
 }
 
-.arraow_all {
+body .section_main .container .row div div .div_mouse .div_arraow .arraow_all {
     opacity: 0;
 }
 
-.arraow1 {
+body .section_main .container .row div div .div_mouse .div_arraow .arraow1 {
     animation: animation_arraow1 3s infinite;
 }
 
@@ -339,7 +333,7 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.arraow2 {
+body .section_main .container .row div div .div_mouse .div_arraow .arraow2 {
     animation: animation_arraow2 3s infinite;
 }
 
@@ -353,7 +347,7 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.arraow3 {
+body .section_main .container .row div div .div_mouse .div_arraow .arraow3 {
     animation: animation_arraow3 3s infinite;
 }
 
@@ -367,11 +361,7 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     }
 }
 
-.div_card_left {
-    margin-left: 100px;
-}
-
-.row_bottom {
+body .section_main .container .row_bottom {
     flex-wrap: wrap;
     z-index: 1;
     background-color: $color_scroll_bold;
@@ -379,15 +369,15 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     height: 150px;
 }
 
-.text_one {
+body .section_main .container .row_bottom .col_child div .div_width div .text_one {
     font-size: 14px;
 }
 
-.text_tow {
+body .section_main .container .row_bottom .col_child div .div_width div .text_tow {
     font-size: 17px;
 }
 
-.div_width::after {
+body .section_main .container .row_bottom .col_child div .div_width::after {
     content: "";
     right: 20px;
     position: absolute;
@@ -396,17 +386,61 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
     height: 90px;
 }
 
-.div_active .div_width::after,
-.col_child:last-child .div_width::after {
+body .section_main .container .row_bottom .col_child .div_active .div_width::after,
+body .section_main .container .row_bottom .col_child:last-child .div_width::after {
     display: none;
 }
 
-.div_active {
-    width: 107%;
+body .section_main .container .row_bottom .col_child .div_active {
+    width: 100%;
     border-radius: 15px;
-    background-color: $color_main_lynnc;
+    background-color: $color_scroll_bold;
     height: 150px;
-    transform: translate(-20px, 0);
+}
+
+body .section_main .container .row div .div_image_right .div_right {
+    top: 35%;
+    right: 3%;
+    z-index: 1;
+}
+
+body .section_main .container .row div .div_image_right .div_right ul li .icon_width {
+    width: 42px;
+    height: 42px;
+}
+
+body .section_main .container .row_bottom .col_child div .div_width div .active_online {
+    color: $color_button_navbar;
+}
+
+body .section_main .container .row_bottom .col_child div .border_active::before {
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: 17px;
+    width: 0;
+    height: 3px;
+    background-color: $color_button_navbar;
+    animation: animation_border 7s;
+}
+
+@keyframes animation_border {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+body .section_main .container .row div .div_image .carousel_text {
+    z-index: 2;
+    margin-left: -30px;
+}
+
+body .section_main .container .row div .carousel {
+    position: static;
 }
 
 // end main
@@ -423,6 +457,10 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
 
     body header nav .container div ul li .link_signin {
         margin-left: 10px !important;
+    }
+
+    body .section_main .container .row_bottom {
+        transform: translate(0, -145px);
     }
 }
 
@@ -482,81 +520,91 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
         padding-bottom: 0;
     }
 
-    .section_main {
-        height: 650px;
+    body .section_main {
+        height: 200px;
     }
 
-    .image_respons {
-        position: absolute;
-    }
-
-    .div_image:before {
+    body .section_main .container .row_bottom .col_child div .border_active::before,
+    body .section_main .container .row div .div_image:before {
         display: none;
     }
 
-    .div_image::after,
-    .div_image_right:before,
-    .div_center {
-        background-size: 100% 650px;
-        width: 100%;
-        height: 650px;
-        left: 0;
-        z-index: -1;
+    .image_right {
+        width: 100% !important;
+        height: 600px !important;
+        right: 0;
     }
 
-    .title_number {
+    body .section_main .container .row div .div_image_right:before,
+    .div_center {
+        background-size: 100% 600px;
+        width: 100%;
+        height: 600px;
+        left: 0;
+    }
+
+    body .section_main .container .row div .div_image .carousel_text div .title_number {
         font-size: 60px;
     }
 
-    .size_main {
+    body .section_main .container .row div .div_center .carousel-inner {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    body .section_main .container .row div .div_center .carousel_text div .size_main {
         width: 250px;
         font-size: 20px;
     }
 
-    .row_bottom {
+    body .section_main .container .row_bottom {
         width: 335px;
         height: 172.65px;
         transform: translate(0, -350px);
     }
 
-    .image_width {
+    body .section_main .container .row_bottom .col_child div .div_width .image_width {
         width: 60px;
         height: 37.73px;
     }
 
-    .div_width {
+    body .section_main .container .row_bottom .col_child div .div_width {
         height: 86px;
     }
 
-    .div_active {
+    body .section_main .container .row_bottom .col_child .div_active {
         width: 167px;
         border-radius: 0;
         height: 86px;
         transform: translate(0, 0);
     }
 
-    .text_one {
+    body .section_main .container .row_bottom .col_child div .div_width div .text_one {
         font-size: 8px;
     }
 
-    .text_tow {
+    body .section_main .container .row_bottom .col_child div .div_width div .text_tow {
         width: 110%;
         font-size: 9px;
     }
 
-    .div_width::after {
+    body .section_main .container .row_bottom .col_child div .div_width::after {
         right: 0;
         width: 2px;
         height: 40px;
     }
+
+    body .section_main .container .row div .div_image .carousel_text {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 300px) and (min-width: 0) {
-    .row_bottom {
+    body .section_main .container .row_bottom {
         width: 100%;
     }
 
-    .div_active {
+    body .section_main .container .row_bottom .col_child .div_active {
         width: 130px;
     }
 }
