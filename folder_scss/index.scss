@@ -178,7 +178,7 @@ body header nav .container div ul li .active {
 
 .div_line_left,
 .div_line_right {
-    width: 40.37px;
+    width: 45.37px;
     height: 2px;
 }
 
@@ -211,6 +211,18 @@ body header nav .container div ul li .active {
 
 .div_line_left::before {
     left: 0;
+}
+
+.size_card {
+    font-size: 30px;
+}
+
+.button_card {
+    height: 60.96px;
+}
+
+.title_size_span {
+    font-size: 44px;
 }
 
 // end everyone
@@ -678,12 +690,6 @@ body .section_point:nth-child(odd) .section_line .container .div_left_center {
 }
 
 // end line
-// start about
-body .section_point .container .row .col div .title_size_span {
-    font-size: 44px;
-}
-
-// end about
 // start platform
 body .section_point .container .row .col div div .div_before_image::before {
     content: url("/images/images_home/image_dashboard_animation.png");
@@ -802,6 +808,10 @@ body .section_bottom {
     z-index: -1;
 }
 
+.section_bottom_1 {
+    bottom: 450px !important;
+}
+
 body .section_bottom .div_clice::before {
     content: url("/images/images_home/background_about1.png");
     position: absolute;
@@ -815,7 +825,200 @@ body .section_bottom .div_clice::after {
     top: 50px;
 }
 
+body .section_point .container .div_child:nth-child(even) .div_rounded {
+    border-radius: 20px 0 0 20px;
+}
+
+body .section_point .container .div_child:nth-child(odd) .div_rounded {
+    border-radius: 0 20px 20px 0;
+}
+
 // end solutions
+// start works
+body .section_point div .row_overflow .row div:nth-child(odd) .image_background,
+body .section_point div .row_overflow .row div:nth-child(even) .image_background {
+    padding: 20px 12px;
+}
+
+body .section_point div .row_overflow .row div:nth-child(odd) .image_background {
+    background-color: $color_icon1;
+}
+
+body .section_point div .row_overflow .row div:nth-child(even) .image_background {
+    background-color: $color_icon2;
+}
+
+body .section_point div .row_overflow .row div .image_background::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 1.7px;
+    top: 50%;
+    left: -140px;
+    background-color: #3b606495;
+    z-index: -1;
+}
+
+body .section_point div .row_overflow .row div:first-child .image_background::before,
+body .section_point div .row_overflow .row div:nth-child(7) .image_background::before,
+body .section_point div .row_overflow .row div:nth-child(6n + 1) .image_background::before {
+    display: none;
+}
+
+body .section_point div .row_overflow .row div .image_background .image_size {
+    width: 39px;
+    height: 39px;
+}
+
+body .section_point div .row_overflow .row div .title_size_mobile {
+    height: 80px;
+}
+
+// end works
+// start cards
+body section .container .row div:last-child .div_card,
+body section .container .row div:nth-child(odd) .div_card,
+body section .container .row div:nth-child(even) .div_card {
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+}
+
+body section .container .row div:last-child .div_card,
+body section .container .row div:nth-child(odd) .div_card {
+    background-image: url("/images/images_home/image_card.png");
+    background-size: 100% 100px;
+    height: 100px;
+}
+
+body section .container .row div:nth-child(even) .div_card {
+    background-image: url("/images/images_home/image_card_pus.png");
+    background-size: 100% 110%;
+    width: 100%;
+    height: 110%;
+    padding-top: 40px;
+    border-radius: 20px;
+    top: -30px;
+}
+
+body section .container .row div:last-child .div_card {
+    background-image: url("/images/images_home/image_card_right.png");
+}
+
+body .section_point .container .row .div_card .size_text {
+    font-size: 36px;
+}
+
+body .section_point .container .row .div_child .div_border_card {
+    border-top: transparent !important;
+    border: 1.6px solid $color_button_navbar;
+    border-radius: 0 0 10px 10px;
+}
+
+body section .container .row div:nth-child(even) .div_border_card {
+    color: $color_white !important;
+    border: 0 solid $color_button_navbar;
+}
+
+body section .container .row div:nth-child(odd) .div_border_card {
+    color: $color_text_navbar;
+}
+
+body .section_point .container .row .div_child .div_border_card div:last-child .size_card {
+    border: none !important;
+}
+
+body .section_point .container .row>.div_child:nth-child(odd) .button_card {
+    background-color: $color_text_navbar;
+}
+
+.button_card:hover::before {
+    height: 90px !important;
+}
+
+body .section_point .container .row div .div_card div .div_line_card {
+    height: 2px;
+    background-color: $color_button_navbar;
+}
+
+body .section_point .container .row div .div_card div .div_line_card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 73%;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: $color_button_navbar;
+}
+
+body .section_point .container .row div .div_card div .div_line_card::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 73%;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: $color_button_navbar;
+}
+
+// end cards
+// start testmonials
+.color_title {
+    margin-left: 250px;
+    margin-right: 250px;
+    color: $color_text_navbar;
+}
+
+.div_relative::before {
+    content: url("/images/images_home/icom_arrawo_left.svg");
+    position: absolute;
+    left: 200px;
+}
+
+.div_relative::after {
+    content: url("/images/images_home/icom_arrawo_right.svg");
+    position: absolute;
+    right: 200px;
+    bottom: -50px;
+}
+
+.title_size_smoll {
+    font-size: 14px;
+}
+
+.div_circle_carousel {
+    width: 0 !important;
+    height: 0 !important;
+    background-color: $color_point;
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1 !important;
+    background-color: $color_point;
+}
+
+body section .container .row div div .div_enter .active {
+    background-color: $color_button_navbar;
+}
+
+.div_margin {
+    margin-left: 420px;
+    margin-right: 420px;
+}
+
+.div_arraow {
+    z-index: 3;
+    background-color: $color_point;
+}
+
+.div_arraow:hover {
+    color: $color_white;
+    background-color: $color_button_navbar;
+}
+
+// end testmonials
 // start media
 @media (max-width: 1200px) and (min-width: 990px) {
     body header nav .container div ul {
@@ -850,6 +1053,32 @@ body .section_bottom .div_clice::after {
 
     body .section_main .container .row div .div_center .carousel_text div .size_main {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 550px) {
+    body .section_point div .row_overflow .row div .image_background::before {
+        width: 50px !important;
+        height: 1.7px !important;
+        left: -50px !important;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n) .image_background::after,
+    body .section_point div .row_overflow .row div:nth-child(4) .image_background::after,
+    body .section_point div .row_overflow .row div:first-child .image_background::before,
+    body .section_point div .row_overflow .row div:nth-child(7) .image_background::before,
+    body .section_point div .row_overflow .row div:nth-child(6n + 1) .image_background::before {
+        display: none !important;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3) .image_background::after {
+        display: none !important;
+    }
+
+    body section .container .row div:nth-child(even) .div_card {
+        top: 0;
+        background-size: 100% 98.6%;
+        height: 98.6%;
     }
 }
 
@@ -1062,7 +1291,7 @@ body .section_bottom .div_clice::after {
         font-size: 18px !important;
     }
 
-    body .section_point .container .row .col div .title_size_span {
+    .title_size_span {
         font-size: 20px;
     }
 
@@ -1083,6 +1312,105 @@ body .section_bottom .div_clice::after {
         line-height: 23px;
         font-size: 14px !important;
     }
+
+    body .section_point div .row_overflow .row div .image_background:nth-child(odd) .image_background,
+    body .section_point div .row_overflow .row div .image_background:nth-child(even) .image_background {
+        padding: 10px 10px;
+    }
+
+    body .section_point div .row_overflow .row div .image_background::before {
+        content: "";
+        position: absolute;
+        width: 350%;
+        height: 1.7px;
+        top: 50%;
+        left: 0px;
+        border: 2px dashed #3b606495;
+        z-index: -1;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(6n + 1) .image_background::before {
+        display: block;
+    }
+
+    body .section_point div .row_overflow .row div:last-child .image_background::before,
+    body .section_point div .row_overflow .row div:nth-child(3n) .image_background::before,
+    body .section_point div .row_overflow .row div:nth-child(3n) .image_background::before {
+        width: 70px;
+        height: 1.7px;
+        top: 50%;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(1) .image_background::before {
+        left: 0 !important;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n + 1) .image_background::before {
+        left: -30px;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n) .image_background::after {
+        content: "";
+        position: absolute;
+        width: 1.7px;
+        height: 158px;
+        top: 50%;
+        border: 2px dashed #3b6064d8;
+        z-index: -1;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(7n) .image_background::after,
+    body .section_point div .row_overflow .row div:nth-child(13n) .image_background::after,
+    body .section_point div .row_overflow .row div:nth-child(1) .image_background::after,
+    body .section_point div .row_overflow .row div:nth-child(6n) .image_background::after {
+        content: "";
+        display: none;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n) .image_background::after {
+        right: -25px;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n + 1) .image_background::after {
+        content: "";
+        position: absolute;
+        width: 1.7px;
+        height: 158px;
+        top: 50%;
+        border: 2px dashed #3b6064d8;
+        z-index: -1;
+    }
+
+    body .section_point div .row_overflow .row div:nth-child(3n + 1) .image_background::after {
+        left: -25px;
+    }
+
+    body .section_point div .row_overflow {
+        height: 450px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    body .section_point div .row_overflow .row div .image_background .image_size {
+        width: 25px;
+        height: 25px;
+    }
+
+    body section .container .row div:nth-child(even) .div_card {
+        top: 0;
+        background-size: 100% 100%;
+        height: 100%;
+    }
+
+    .div_margin {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .color_title {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 300px) and (min-width: 0) {
@@ -1097,6 +1425,10 @@ body .section_bottom .div_clice::after {
     body .section_point .container .row div .div_icon {
         width: 39px;
         height: 34px;
+    }
+
+    .title_size_mobile {
+        font-size: 10px;
     }
 }
 
