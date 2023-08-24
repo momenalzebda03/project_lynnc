@@ -241,15 +241,31 @@ body header nav .container div ul li .active {
     margin-bottom: 7px !important;
 }
 
-.div_arraow {
+.div_arraow_1 {
     z-index: 3;
     background-color: $color_point;
     transition: 0.4s;
 }
 
-.div_arraow:hover {
+.div_arraow_1:hover {
     color: $color_white;
     background-color: $color_button_navbar;
+}
+
+.body_x {
+    overflow-x: hidden;
+}
+
+.link_footer_color {
+    color: $color_string_footer;
+}
+
+.icon_index {
+    z-index: 2;
+}
+
+.button_overrite {
+    background-color: $color_text_navbar;
 }
 
 // end everyone
@@ -329,6 +345,12 @@ body .section_main .row div .div_left {
 }
 
 body .section_main .row div .div_left div .div_circle {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+
+body .section_main .row div .div_left div .div_circle1 {
     cursor: pointer;
     width: 10px;
     height: 10px;
@@ -448,6 +470,7 @@ body .section_main .container .row_bottom .col_child div .div_width div .text_to
     font-size: 17px;
 }
 
+body .section_main .container .row_bottom .col_child div .div_width1::after,
 body .section_main .container .row_bottom .col_child div .div_width::after {
     content: "";
     right: 20px;
@@ -455,6 +478,10 @@ body .section_main .container .row_bottom .col_child div .div_width::after {
     background-color: $color_white;
     width: 2px;
     height: 90px;
+}
+
+body .section_main .container .row_bottom .col_child div .div_width1::after {
+    background-color: transparent;
 }
 
 body .section_main .container .row_bottom .col_child .active_bottom .div_width::after,
@@ -469,10 +496,34 @@ body .section_main .container .row_bottom .col_child .active_bottom {
     height: 150px;
 }
 
+body .section_main .container .row_bottom .col_child .active_image {
+    background-image: url("/images/images_home/my_image.png");
+    background-size: 100% 135px;
+    width: 100%;
+    height: 135px;
+}
+
 body .section_main .container .row div .div_image_right .div_right {
     top: 35%;
     right: 3%;
     z-index: 1;
+}
+
+body .section_main .container .row div .div_image_right .div_right_before::before,
+body .section_main .container .row div .div_image_right .div_right_before::after {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 110px;
+    background-color: $color_white;
+}
+
+body .section_main .container .row div .div_image_right .div_right_before::before {
+    top: -125px;
+}
+
+body .section_main .container .row div .div_image_right .div_right_before::after {
+    top: 300px;
 }
 
 body .section_main .container .row div .div_image_right .div_right ul li .icon_width {
@@ -484,15 +535,26 @@ body .section_main .container .row_bottom .col_child div .div_width div .active_
     color: $color_button_navbar;
 }
 
-body .section_main .container .row_bottom .col_child div .border_active::before {
+body .section_main .container .row_bottom .col_child div .div_width div .active_online1 {
+    color: $color_button_navbar;
+}
+
+body .section_main .container .row_bottom .col_child div .border_active::before,
+body .section_main .container .row_bottom .col_child div .border_active1::before {
     content: "";
     position: absolute;
-    bottom: 32px;
     left: 17px;
     width: 150px;
     height: 3px;
     background-color: $color_button_navbar;
-    animation: animation_border 7s;
+}
+
+body .section_main .container .row_bottom .col_child div .border_active::before {
+    bottom: 32px;
+}
+
+body .section_main .container .row_bottom .col_child div .border_active1::before {
+    bottom: 23.2px;
 }
 
 body .section_main .container .row div .div_image .carousel_text {
@@ -567,12 +629,20 @@ body .section_main .container .row div .div_center .carousel-inner {
     overflow: visible;
 }
 
-body .section_main .container .image_responsve .icon_index {
-    z-index: 2;
-}
-
 .section_main .container .row div .div_image .carousel_text .carousel-item .row div .image_position {
     width: 103vh;
+}
+
+.active_white {
+    color: $color_white !important;
+}
+
+.active_white1 {
+    color: $color_white !important;
+}
+
+.span_online {
+    color: $color_text_navbar;
 }
 
 // end main
@@ -1055,36 +1125,171 @@ body section .container .div_bottom_arraow {
 }
 
 body section .container .div_bottom_arraow .swiper-button-next {
-    right: -150px;
+    right: -90px;
 }
 
 body section .container .div_bottom_arraow .swiper-button-prev {
-    left: -150px;
+    left: -90px;
 }
 
 // end aggregators
+// start signin1
+.input_padding {
+    padding: 15px;
+}
+
+.input_padding_1 {
+    padding-bottom: 5px;
+}
+
+.text_top {
+    font-size: 13px;
+    top: 4px;
+    left: 15px;
+    color: $color_text_navbar;
+}
+
+.text_top_1 {
+    top: 2px !important;
+}
+
+body section div .modal-body .row {
+    row-gap: 20px;
+}
+
+body section div div .div_main_sign .row div div .text_click {
+    font-size: 20px;
+}
+
+body section div div .div_main_sign {
+    background-color: $color_text_navbar;
+    border-radius: 10px 10px 0 0;
+}
+
+// end signin1
+// start singin2
+.row_height {
+    margin-top: -1px;
+    margin-left: -14px;
+}
+
+.div_size {
+    width: 40px;
+    height: 40px;
+}
+
+.div_rounded_point {
+    width: 170px;
+    height: 170px;
+    outline: 12px solid $color_button_navbar;
+    animation: animation_outline 2s infinite;
+}
+
+@keyframes animation_outline {
+    0% {
+        outline: 12px solid $color_button_navbar;
+    }
+
+    50% {
+        outline: 8px solid $color_button_navbar;
+    }
+
+    100% {
+        outline: 12px solid $color_button_navbar;
+    }
+}
+
+.color_button {
+    width: 94%;
+    background-color: $color_login;
+    border-radius: 15px;
+}
+
+.color_button::before {
+    content: "";
+    border-radius: var(--before_border, 10px 0 0 10px);
+    background-color: $color_text_navbar;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    transition: 0.7s;
+    left: var(--before_left, 0);
+}
+
+.button_login {
+    color: $color_white;
+}
+
+.button_all {
+    z-index: 1;
+    background-color: transparent;
+    width: 50%;
+}
+
+.widht_input {
+    width: 93%;
+}
+
+.button_height {
+    height: 39px;
+}
+
+.div_or::before,
+.div_or::after {
+    content: "";
+    background-color: $color_line;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+}
+
+.div_or::before {
+    left: 25px;
+}
+
+.div_or::after {
+    right: 205px;
+}
+
+// end singin2
 // start footer
-.section_footer {
+body .section_footer {
     margin-top: 150px;
     border-radius: 30px 30px 0 0;
     background-color: $color_footer;
 }
 
-.div_up {
-    transform: translate(12%, -40px);
+body .section_footer .container .div_up {
+    transform: translate(102px, -40px);
 }
 
-.arraow_footer {
+body .section_footer .container .div_up .arraow_footer {
     background-color: $color_text_navbar;
 }
 
-.arraow_footer::before {
+body .section_footer .container .div_up .arraow_footer::before {
     border: 1px solid $color_text_navbar !important;
+}
+
+body .section_footer .container .row div .title_color {
+    width: 120%;
+    line-height: 25px;
+    color: $color_text_footer;
+}
+
+body .section_footer .container .row div .hover_link .image_tran {
+    transition: 0.4s;
+}
+
+body .section_footer .container .row div .hover_link:hover img {
+    margin-left: 15px;
 }
 
 // end footer
 // start footer center
-body .container .div_top {
+body .footer_container .div_top {
     top: 180px;
 }
 
@@ -1118,7 +1323,7 @@ body .container .div_top .section_footer_center div .row div .title_before::befo
 body .container .div_top .section_footer_center div .row div .title_before::after {
     width: 10px;
     height: 10px;
-    top: 38%;
+    top: 13px;
     border-radius: 50%;
 }
 
@@ -1141,6 +1346,11 @@ body .container .div_top .section_footer_center div .row div div .button_size {
     width: 248px;
     height: 48px;
     background-color: $color_button_navbar;
+    z-index: 1;
+}
+
+body .section_footer .container .container .row div div .footer_hover:hover {
+    color: $color_products2;
 }
 
 // end footer center
@@ -1263,6 +1473,7 @@ body .container .div_top .section_footer_center div .row div div .button_size {
         padding-bottom: 0;
     }
 
+    body .section_main .container .row_bottom .col_child div .border_active1::before,
     body .section_bottom .div_clice::before,
     body .section_bottom .div_clice::after,
     body .section_main .container .row_bottom .col_child div .div_width::after,
@@ -1298,6 +1509,10 @@ body .container .div_top .section_footer_center div .row div div .button_size {
         height: 37.73px;
     }
 
+    body .section_main .container .row_bottom .col_child .active_image {
+        height: 86px;
+    }
+
     body .section_main .container .row_bottom .col_child div .div_width {
         height: 86px;
     }
@@ -1323,7 +1538,7 @@ body .container .div_top .section_footer_center div .row div div .button_size {
     }
 
     .image_responsve {
-        width: 100%;
+        width: 100% !important;
     }
 
     body .section_main_home .div_background .container_padding .row div div .size_main_home {
@@ -1417,7 +1632,7 @@ body .container .div_top .section_footer_center div .row div div .button_size {
     }
 
     .title_size_span {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .link_button {
@@ -1559,9 +1774,27 @@ body .container .div_top .section_footer_center div .row div div .button_size {
         left: 130px;
     }
 
-    .title_before::before,
-    .title_before::after {
+    body .container .div_top .section_footer_center div .row div .title_before::before,
+    body .container .div_top .section_footer_center div .row div .title_before::after {
         right: -100px;
+    }
+
+    body .container .div_top .section_footer_center div .row div .title_before::after {
+        top: 8px;
+    }
+
+    body .section_footer .container .row div .link_footer {
+        width: 189.88px;
+        height: 27.27px;
+    }
+
+    body .section_footer .container .row div a .span_mobile {
+        color: $color_button_navbar;
+    }
+
+    body .div_signin {
+        top: 10px;
+        left: 5%;
     }
 }
 
@@ -1581,6 +1814,11 @@ body .container .div_top .section_footer_center div .row div div .button_size {
 
     .title_size_mobile {
         font-size: 10px;
+    }
+
+    body .container .div_top .section_footer_center div .row div .title_before::before,
+    body .container .div_top .section_footer_center div .row div .title_before::after {
+        display: none;
     }
 }
 
