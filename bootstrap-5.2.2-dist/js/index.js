@@ -232,15 +232,21 @@ window.addEventListener("resize", () => {
 var button_create = document.getElementById("button_create");
 var button_login = document.getElementById("button_login");
 var color_button = document.getElementById("color_button");
+var form1 = document.getElementById("form1");
+var form2 = document.getElementById("form2");
 button_create.addEventListener("click", () => {
   button_login.style.color = "black";
   button_create.style.color = "white";
   color_button.style.setProperty("--before_left", "52%");
   color_button.style.setProperty("--before_border", "0 10px 10px 0");
+  form1.style.display = "none";
+  form2.style.display = "flex";
 });
 button_login.addEventListener("click", () => {
   button_create.style.color = "black";
   button_login.style.color = "white";
   color_button.style.setProperty("--before_left", "0");
   color_button.style.setProperty("--before_border", "10px 0 0 10px");
+  form1.style.display = "flex";
+  form2.style.display = "none";
 });

@@ -1112,17 +1112,17 @@ body section div div .div_main_sign {
   border-radius: 10px 10px 0 0;
 }
 
-.row_height {
+body section div div .row_height {
   margin-top: -1px;
   margin-left: -14px;
 }
 
-.div_size {
+body section div div .row div div .div_size {
   width: 40px;
   height: 40px;
 }
 
-.div_rounded_point {
+body section div div .row div div div .div_rounded_point {
   width: 170px;
   height: 170px;
   outline: 12px solid #05D35D;
@@ -1140,13 +1140,13 @@ body section div div .div_main_sign {
     outline: 12px solid #05D35D;
   }
 }
-.color_button {
+body section div div .row div div .color_button {
   width: 94%;
   background-color: #F1F1F1;
   border-radius: 15px;
 }
 
-.color_button::before {
+body section div div .row div div .color_button::before {
   content: "";
   border-radius: var(--before_border, 10px 0 0 10px);
   background-color: #3B6064;
@@ -1158,11 +1158,11 @@ body section div div .div_main_sign {
   left: var(--before_left, 0);
 }
 
-.button_login {
+body section div div .row div div div .button_login {
   color: white;
 }
 
-.button_all {
+body section div div .row div div .button_all {
   z-index: 1;
   background-color: transparent;
   width: 50%;
@@ -1172,12 +1172,12 @@ body section div div .div_main_sign {
   width: 93%;
 }
 
-.button_height {
+body section div div .row div div form .button_height {
   height: 39px;
 }
 
-.div_or::before,
-.div_or::after {
+body section div div .row div div form .widht_input .div_or::before,
+body section div div .row div div form .widht_input .div_or::after {
   content: "";
   background-color: #878787;
   position: absolute;
@@ -1186,12 +1186,24 @@ body section div div .div_main_sign {
   top: 13px;
 }
 
-.div_or::before {
+body section div div .row div div form .widht_input .div_or::before {
   left: 25px;
 }
 
-.div_or::after {
+body section div div .row div div form .widht_input .div_or::after {
   right: 205px;
+}
+
+body section div div .row div div form .widht_input div a .span_size {
+  font-size: 12px;
+}
+
+body section div div .row div div #form1 {
+  display: flex;
+}
+
+body section div div .row div div #form2 {
+  display: none;
 }
 
 body .section_footer {
