@@ -241,10 +241,6 @@ body header nav .container div ul li .active {
   background-color: #05D35D;
 }
 
-.body_x {
-  overflow-x: hidden;
-}
-
 .link_footer_color {
   color: #494D4E;
 }
@@ -255,6 +251,14 @@ body header nav .container div ul li .active {
 
 .button_overrite {
   background-color: #3B6064;
+}
+
+.span_online {
+  color: #3B6064;
+}
+
+.input_search {
+  height: 57px;
 }
 
 body header {
@@ -609,16 +613,68 @@ body .section_main .container .row div .div_center .carousel-inner {
   width: 103vh;
 }
 
-.active_white {
+body .section_main .container_mobile .image_responsve div .div_image .carousel_text .element_height .row_bottom .col_child .active_image .div_width div .active_white {
   color: white !important;
 }
 
-.active_white1 {
+body .section_main .container_mobile .image_responsve div .div_image .carousel_text .element_height .row_bottom .col_child .active_image .active_white1 {
   color: white !important;
 }
 
-.span_online {
+body .section_main_integrations {
+  height: 70vh;
+  background: linear-gradient(90deg, rgb(222, 232, 234), rgb(150, 174, 154));
+}
+
+body .section_main_integrations .container div .title_main {
+  font-size: 60px;
+}
+
+body .section_main_integrations .container div .width_text {
+  width: 883px;
+}
+
+body .section_search div div .image_search {
+  top: 18px;
+}
+
+body .section_search div .div_iconsearch {
+  background-color: #05D35D;
+}
+
+input[type=checkbox] {
+  width: 30px;
+  height: 30px;
+  border-radius: 35%;
+  border: 1px solid black;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+  background-image: url("/images/images_Integrations/icon_true.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #3B6064;
+}
+
+input[type=checkbox]:checked + label {
   color: #3B6064;
+  font-weight: bold;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.653);
+}
+
+.div_news {
+  height: 90px;
+}
+
+.row_gap {
+  row-gap: 20px;
 }
 
 body .section_point .container .row div .row_hover div .number_carousel {
@@ -1658,6 +1714,17 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     top: 10px;
     left: 5%;
   }
+  body .section_main_integrations {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  body .section_main_integrations .container div .title_main {
+    font-size: 25px;
+  }
+  .input_width {
+    width: 90% !important;
+  }
 }
 @media (max-width: 300px) and (min-width: 0) {
   body .section_main .container .row_bottom {
@@ -1676,5 +1743,11 @@ body .section_footer .container .container .row div div .footer_hover:hover {
   body .container .div_top .section_footer_center div .row div .title_before::before,
   body .container .div_top .section_footer_center div .row div .title_before::after {
     display: none;
+  }
+  .div_footertext {
+    flex-direction: column;
+  }
+  .section_main_integrations {
+    height: 95vh;
   }
 }/*# sourceMappingURL=index.css.map */

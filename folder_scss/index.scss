@@ -252,10 +252,6 @@ body header nav .container div ul li .active {
     background-color: $color_button_navbar;
 }
 
-.body_x {
-    overflow-x: hidden;
-}
-
 .link_footer_color {
     color: $color_string_footer;
 }
@@ -266,6 +262,14 @@ body header nav .container div ul li .active {
 
 .button_overrite {
     background-color: $color_text_navbar;
+}
+
+.span_online {
+    color: $color_text_navbar;
+}
+
+.input_search {
+    height: 57px;
 }
 
 // end everyone
@@ -633,19 +637,74 @@ body .section_main .container .row div .div_center .carousel-inner {
     width: 103vh;
 }
 
-.active_white {
+body .section_main .container_mobile .image_responsve div .div_image .carousel_text .element_height .row_bottom .col_child .active_image .div_width div .active_white {
     color: $color_white !important;
 }
 
-.active_white1 {
+body .section_main .container_mobile .image_responsve div .div_image .carousel_text .element_height .row_bottom .col_child .active_image .active_white1 {
     color: $color_white !important;
 }
 
-.span_online {
-    color: $color_text_navbar;
+body .section_main_integrations {
+    height: 70vh;
+    background: -webkit-linear-gradient(90deg, rgb(222, 232, 234), rgb(150, 174, 154));
+    background: linear-gradient(90deg, rgb(222, 232, 234), rgb(150, 174, 154));
+}
+
+body .section_main_integrations .container div .title_main {
+    font-size: 60px;
+}
+
+body .section_main_integrations .container div .width_text {
+    width: 883px;
 }
 
 // end main
+// start search
+body .section_search div div .image_search {
+    top: 18px;
+}
+
+body .section_search div .div_iconsearch {
+    background-color: $color_button_navbar;
+}
+
+// end search
+// start fillter
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    border-radius: 35%;
+    border: 1px solid $color_black;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked {
+    background-image: url("/images/images_Integrations/icon_true.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid $color_text_navbar;
+}
+
+input[type=checkbox]:checked+label {
+    color: $color_text_navbar;
+    font-weight: bold;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.653);
+}
+
+.div_news {
+    height: 90px;
+}
+
+.row_gap {
+    row-gap: 20px;
+}
+// end fillter
 // start carousel
 body .section_point .container .row div .row_hover div .number_carousel {
     color: $color_carousel;
@@ -1808,6 +1867,20 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         top: 10px;
         left: 5%;
     }
+
+    body .section_main_integrations {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    body .section_main_integrations .container div .title_main {
+        font-size: 25px;
+    }
+
+    .input_width {
+        width: 90% !important;
+    }
 }
 
 @media (max-width: 300px) and (min-width: 0) {
@@ -1831,6 +1904,14 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     body .container .div_top .section_footer_center div .row div .title_before::before,
     body .container .div_top .section_footer_center div .row div .title_before::after {
         display: none;
+    }
+
+    .div_footertext {
+        flex-direction: column;
+    }
+
+    .section_main_integrations {
+        height: 95vh;
     }
 }
 
