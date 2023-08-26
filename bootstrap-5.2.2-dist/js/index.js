@@ -199,6 +199,18 @@ divCircles.forEach(function (circle, index) {
   });
 });
 
+var on = document.getElementById("on");
+var video = document.querySelector("video");
+on.onclick = () => {
+  if (bollen == true) {
+    video.play();
+    bollen = false;
+  } else {
+    video.pause();
+    bollen = true;
+  }
+};
+
 var button_create = document.getElementById("button_create");
 var button_login = document.getElementById("button_login");
 var color_button = document.getElementById("color_button");
@@ -219,6 +231,56 @@ button_login.addEventListener("click", () => {
   color_button.style.setProperty("--before_border", "10px 0 0 10px");
   form1.style.display = "flex";
   form2.style.display = "none";
+});
+
+function removeFilters() {
+  const imageContainer = document.getElementById("imageContainer");
+  const images = imageContainer.getElementsByTagName("img");
+  for (let i = 0; i < images.length; i++) {
+    images[i].classList.remove("grayscale-filter");
+  }
+}
+function applyGrayscaleToHalf() {
+  const imageContainer = document.getElementById("imageContainer");
+  const images = imageContainer.getElementsByTagName("img");
+  for (let i = 0; i < images.length; i++) {
+    if (i < images.length / 2) {
+      images[i].classList.add("grayscale-filter");
+    } else {
+      images[i].classList.remove("grayscale-filter");
+    }
+  }
+}
+
+var tag_header = document.querySelectorAll(".div_number");
+for (let i = 0; i < tag_header.length; i++) {
+  var chekd = tag_header[i];
+  chekd.addEventListener("click", function () {
+    for (let i = 0; i < mouse_click.length; i++) {
+      mouse_click[i].classList.remove("div_iconsearch");
+    }
+    this.classList.add("div_iconsearch");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  let searchIcon = document.querySelector(".image_search");
+  let searchBox = document.querySelector("#solutionSearchInput");
+  let imageContainers = document.querySelectorAll(".div_news");
+  searchIcon.addEventListener("click", () => {
+    let value = searchBox.value.toLowerCase();
+    imageContainers.forEach((container) => {
+      let title = container
+        .querySelector("img")
+        .getAttribute("data-title")
+        .toLowerCase();
+      if (title.includes(value) || value === "") {
+        container.style.filter = "none";
+      } else {
+        container.style.filter = "grayscale(100%)";
+      }
+    });
+  });
 });
 
 var icon_animation = document.getElementById("icon_top");
