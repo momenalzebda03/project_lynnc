@@ -254,13 +254,31 @@
                             placeholder="Quick Find">
                     </div>
                     <div class="rounded-4 accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="flush-headingOne">
                             <button class="fs-5 accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                data-bs-target="#flush-collapseone">
                                 1 - Locations
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div id="flush-collapseone" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <ul class="ms-4 px-3 d-flex flex-column gap-2 list-unstyled mouse_click">
+                                <li class="li_hover">L1 - Create a Location</li>
+                                <li class="li_hover">L2 - Sync Products Using the Locations Page</li>
+                                <li class="li_hover">L3 - Enable/Disable Busy Mode</li>
+                                <li class="li_hover">L4 - Create & Assign Location Groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded-4 accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsetow">
+                                2 - Products
+                            </button>
+                        </h2>
+                        <div id="flush-collapsetow" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <ul class="ms-4 px-3 d-flex flex-column gap-2 list-unstyled mouse_click">
                                 <li class="li_hover">L1 - Create a Location</li>
                                 <li class="li_hover">L2 - Sync Products Using the Locations Page</li>
@@ -273,7 +291,7 @@
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapsethree">
-                                2 - Products
+                                3 - Menus
                             </button>
                         </h2>
                         <div id="flush-collapsethree" class="accordion-collapse collapse"
@@ -290,7 +308,7 @@
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapsefour">
-                                3 - Menus
+                                4 - Snoozing
                             </button>
                         </h2>
                         <div id="flush-collapsefour" class="accordion-collapse collapse"
@@ -307,27 +325,10 @@
                         <h2 class="accordion-header" id="flush-headingOne">
                             <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapsefive">
-                                4 - Snoozing
-                            </button>
-                        </h2>
-                        <div id="flush-collapsefive" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <ul class="ms-4 px-3 d-flex flex-column gap-2 list-unstyled mouse_click">
-                                <li class="li_hover">L1 - Create a Location</li>
-                                <li class="li_hover">L2 - Sync Products Using the Locations Page</li>
-                                <li class="li_hover">L3 - Enable/Disable Busy Mode</li>
-                                <li class="li_hover">L4 - Create & Assign Location Groups</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="rounded-4 accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapsesix">
                                 5 - Operations
                             </button>
                         </h2>
-                        <div id="flush-collapsesix" class="accordion-collapse collapse"
+                        <div id="flush-collapsefive" class="accordion-collapse collapse"
                             aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <ul class="ms-4 px-3 d-flex flex-column gap-2 list-unstyled mouse_click">
                                 <li class="li_hover">L1 - Create a Location</li>
@@ -446,7 +447,8 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="text-center text-md-end">
-                            <span class="color_links fw-bold">Copyright © 2022 Lynnc. All rights reserved.</span>
+                            <span class="color_links fw-bold text-nowrap">Copyright © 2022 Lynnc. All rights
+                                reserved.</span>
                         </div>
                     </div>
                 </div>

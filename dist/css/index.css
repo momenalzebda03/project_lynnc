@@ -1352,7 +1352,7 @@ body .section_footer .container .row div .hover_link:hover img {
   margin-left: 15px;
 }
 
-.section_footerborder {
+body section .section_footerborder {
   bottom: 0px;
   border-radius: 40px 40px 0 0;
   border: 1px solid #05D35D;
@@ -1821,10 +1821,11 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     width: 70px;
     height: 70px;
   }
-  .section_footerborder {
+  body section .section_footerborder {
+    width: 107% !important;
     bottom: -300px;
   }
-  .div_footertext {
+  body section .section_footerborder .row div .div_footertext {
     flex-direction: column;
   }
 }
