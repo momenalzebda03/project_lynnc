@@ -18,18 +18,11 @@ body {
     color: $color_text_navbar;
 }
 
-body header nav .container div ul li .active:hover,
-body header nav .container div ul li .active {
-    color: $color_button_navbar;
-    border-bottom: 4px solid $color_button_navbar;
-    padding-bottom: 28px;
-}
-
-.link_color:hover {
-    color: $color_button_navbar;
-    border-bottom: 4px solid $color_button_navbar;
-    padding-bottom: 28px;
-}
+// .link_color:hover {
+//     color: $color_button_navbar;
+//     border-bottom: 2px solid $color_button_navbar;
+//     padding-bottom: 28px;
+// }
 
 .icon_top {
     transition: 0.5s;
@@ -293,6 +286,54 @@ body header nav .container div ul li .active {
     width: 118% !important;
 }
 
+.more_before::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color_white;
+    right: -15px;
+    top: 39%;
+}
+
+.div_bottom {
+    background-color: $color_footer;
+}
+
+.arraow_footer,
+.div_bottom {
+    margin-left: -30px;
+    width: 59px;
+    height: 82px;
+    bottom: -45px;
+}
+
+.arraow_footer::before,
+.div_bottom::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 65px;
+    height: 65px;
+    z-index: -1;
+    top: -4px;
+    border-radius: 35px;
+}
+
+.div_bottom::before {
+    border: 1px solid $color_footer;
+}
+
+.color_text {
+    color: $color_line;
+}
+
+.title_heightcolor {
+    color: $color_string_footer !important;
+    line-height: 25px;
+}
+
 // end everyone
 // start navbar
 body header {
@@ -305,7 +346,7 @@ body header nav .container div ul {
 }
 
 body header nav .container div ul li .section_solutions {
-    top: 50px;
+    top: 55px;
     background-color: $color_navbar_hover;
     border-top: 3px solid $color_button_navbar;
 }
@@ -339,6 +380,42 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
 
 .element_height {
     height: 100vh;
+}
+
+body header nav .container div ul .li_hover::before {
+    content: "";
+    position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+    height: 3px;
+    bottom: -30px;
+    background-color: $color_button_navbar;
+    transition: 0.5s;
+}
+
+body header nav .container div ul .li_hover:hover::before {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+body header nav .container div ul .li_hover:hover .link_color {
+    color: $color_button_navbar;
+}
+
+.li_active::before {
+    content: "";
+    position: absolute;
+    padding-left: 0;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-right: 0;
+    height: 2px;
+    bottom: -30px;
+    background-color: $color_button_navbar;
+}
+
+body header nav .container div ul li .active {
+    color: $color_button_navbar;
 }
 
 // end navbar
@@ -614,34 +691,6 @@ body .section_main_home .div_background .container_padding .row div div .size_ma
     top: -60px;
 }
 
-body .section_main_home .div_bottom {
-    background-color: $color_footer;
-}
-
-.arraow_footer,
-body .section_main_home .div_bottom {
-    margin-left: -30px;
-    width: 59px;
-    height: 82px;
-    bottom: -45px;
-}
-
-.arraow_footer::before,
-body .section_main_home .div_bottom::before {
-    content: "";
-    position: absolute;
-    background-color: transparent;
-    width: 65px;
-    height: 65px;
-    z-index: -1;
-    top: -4px;
-    border-radius: 35px;
-}
-
-body .section_main_home .div_bottom::before {
-    border: 1px solid $color_footer;
-}
-
 body .section_main::-webkit-keygen-select {
     width: 5px;
 }
@@ -713,8 +762,194 @@ body section .row div .padding_mobile .hr_width div .div_video {
     height: 107px;
 }
 
-body section .row div .padding_mobile .hr_width div .color_text {
-    color: $color_line;
+body .section_main_single {
+    height: 90vh !important;
+    background: -webkit-linear-gradient(90deg, rgb(255, 255, 255), rgb(195, 206, 207));
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(195, 206, 207));
+}
+
+body .section_main_single .container .row div div .button_main {
+    width: 277px;
+}
+
+body .section_main_single .container .row div div .div_border .after_image::before,
+body .section_main_single .container .row div div .div_border::after,
+body .section_main_single .container .row div div .div_border::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed #7979799d;
+}
+
+body .section_main_single .container .row div div .div_border::before {
+    left: 20%;
+    top: -12%;
+    width: 380px;
+    height: 380px;
+    animation: rotate_right 30s infinite;
+}
+
+@keyframes rotate_right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+body .section_main_single .container .row div div .div_border::after {
+    left: 26%;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed $color_text;
+    animation: rotate_border 30s infinite;
+}
+
+@keyframes rotate_border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body .section_main_single .container .row div div .div_border .after_image::before {
+    left: 200px;
+    background-image: url("/images/images_integrations_single/icon.svg");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $color_white;
+    z-index: 1;
+    border: transparent;
+}
+
+body .section_main_single .container .row div div .div_border .after_image::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 200px;
+    z-index: 2;
+    border-radius: 50%;
+    border: 2px dashed $color_button_navbar;
+    animation: border 50s infinite;
+}
+
+@keyframes border {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+body .section_main_single .bottom_single {
+    background-color: $color_text_navbar;
+    top: 50%;
+    left: -50% !important;
+    z-index: 1;
+    position: absolute;
+}
+
+body .section_main_single .bottom_single::before {
+    content: "";
+    border: 1px solid $color_text_navbar;
+    height: 70px;
+}
+
+body .section_main_home .div_bottom .image_animation,
+body .section_main_single .bottom_single .image_bottom {
+    animation: image_bottom 1.5s infinite;
+}
+
+@keyframes image_bottom {
+    0% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -5px);
+    }
+}
+
+.div_new {
+    height: 33px;
+    background-color: $color_news;
+    color: $color_button_navbar;
+}
+
+div:first-child .div_social_media {
+    border: 2px solid $color_button_navbar;
+    background-color: $color_white;
+}
+
+.div_social_media {
+    bottom: 25px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid transparent;
+    background-color: $color_text_navbar;
+    position: relative;
+}
+
+// .div_social_media {
+//     bottom: 25px;
+//     right: 10px;
+//     width: 48px;
+//     height: 48px;
+//     border: 2px solid transparent;
+//     background-color: $color_text_navbar;
+//     position: relative;
+
+//     &:first-child {
+//         background-color: $color_white;
+//         border-color: $color_button_navbar;
+//     }
+// }
+
+.div_social_media:hover::before,
+.div_social_media:hover::after {
+    display: block;
+}
+
+.div_social_media::before,
+.div_social_media::after {
+    position: absolute;
+    display: none;
+}
+
+.div_social_media::before {
+    content: "copy link";
+    font-size: 14px;
+    text-align: center;
+    color: $color_white;
+    background-color: $color_black;
+    width: 180%;
+    height: 22px;
+    top: -40px;
+    border-radius: 10px;
+}
+
+.div_social_media::after {
+    content: "▼";
+    top: -26px;
+    color: $color_black;
 }
 
 // end main
@@ -1180,7 +1415,69 @@ body .section_point .container .row div .div_card div .div_line_card::after {
     background-color: $color_button_navbar;
 }
 
+body .section_card .row_gap div .card_border {
+    border: 1px solid $color_button_navbar;
+    height: 100%;
+}
+
+body .section_card .row_gap div .card_border .border_icon {
+    width: 40px;
+    height: 40px;
+    background-color: $color_card;
+}
+
+body .section_card .row_gap div .card_border div .text_card {
+    color: $color_text_footer;
+}
+
+body .section_card .row_gap div .card_border:hover {
+    border: 0;
+}
+
+body .section_card .row_gap div .card_border:hover .image_color {
+    display: block !important;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100.5%;
+}
+
+body .section_card .row_gap div .card_border:hover .span_color,
+body .section_card .row_gap div .card_border:hover .text_card {
+    color: $color_white;
+}
+
 // end cards
+// start evel
+body section .row div div div .div_backnumber {
+    height: 23px;
+    background-color: $color_button_navbar;
+}
+
+// end evel
+// start integrate
+body section .container .row div div .h5_color {
+    color: $color_integrate;
+}
+
+body section .container .row div div .button_width {
+    width: 200px;
+}
+
+// end integrate
+// start key
+body section div div .div_notnumber {
+    width: 12px;
+    height: 12px;
+    background-color: $color_button_navbar;
+}
+
+body section div div .color_key {
+    color: $color_key;
+}
+
+// end key
 // start testmonials
 body section .section_bottom_1 {
     bottom: 500px !important;
@@ -1465,17 +1762,6 @@ body .container .div_top .section_footer_center div .row div .title_footer {
     color: #E0E0E0;
 }
 
-body .container .div_top .section_footer_center div .row div div .link_button .more_before::after {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: $color_white;
-    right: -15px;
-    top: 39%;
-}
-
 body .container .div_top .section_footer_center div .row div div .button_size {
     width: 248px;
     height: 48px;
@@ -1512,6 +1798,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         left: 8%;
     }
 
+    body .section_main_single .container .row div div .div_border .after_image::after,
+    body .section_main_single .container .row div div .div_border .after_image::before,
+    body .section_main_single .container .row div div .div_border::after,
+    body .section_main_single .container .row div div .div_border::before,
     body .section_main .container .row_bottom .col_child div .div_width::after {
         display: none !important;
     }
@@ -1532,15 +1822,16 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         left: -50px !important;
     }
 
+    body .section_main_single .container .row div div .div_border .after_image::after,
+    body .section_main_single .container .row div div .div_border .after_image::before,
+    body .section_main_single .container .row div div .div_border::after,
+    body .section_point div .row_overflow .row div:nth-child(3) .image_background::after,
+    body .section_main_single .container .row div div .div_border::before,
     body .section_point div .row_overflow .row div:nth-child(3n) .image_background::after,
     body .section_point div .row_overflow .row div:nth-child(4) .image_background::after,
     body .section_point div .row_overflow .row div:first-child .image_background::before,
     body .section_point div .row_overflow .row div:nth-child(7) .image_background::before,
     body .section_point div .row_overflow .row div:nth-child(6n + 1) .image_background::before {
-        display: none !important;
-    }
-
-    body .section_point div .row_overflow .row div:nth-child(3) .image_background::after {
         display: none !important;
     }
 
@@ -1607,6 +1898,13 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         padding-bottom: 0;
     }
 
+    .div_social_media,
+    body section div div .div_notnumber,
+    body .section_border,
+    body .section_main_single .container .row div div .div_border .after_image::after,
+    body .section_main_single .container .row div div .div_border .after_image::before,
+    body .section_main_single .container .row div div .div_border::after,
+    body .section_main_single .container .row div div .div_border::before,
     body .section_main .container .row_bottom .col_child div .border_active1::before,
     body .section_bottom .div_clice::before,
     body .section_bottom .div_clice::after,
@@ -1614,7 +1912,7 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     .section_point::before,
     body .section_main .container .row_bottom .col_child div .border_active::before,
     body .section_main .container .row div .div_image:before {
-        display: none;
+        display: none !important;
     }
 
     body .section_main .container .row div .div_image .carousel_text div .title_number {
@@ -1886,10 +2184,6 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         margin-right: 0px;
     }
 
-    body .section_border {
-        border: none !important;
-    }
-
     body section .container .div_bottom_arraow {
         bottom: -50px;
     }
@@ -1932,9 +2226,13 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     }
 
     body .section_main_integrations {
-        height: auto;
+        height: auto !important;
         padding-top: 100px;
         padding-bottom: 20px;
+    }
+
+    .section_main_single {
+        padding-top: 100px !important;
     }
 
     body .section_main_integrations .container div .title_main {
@@ -1960,6 +2258,14 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body .footer_container .div_integrations {
         top: 50px;
+    }
+
+    body .section_main_single .container .row div div .button_main {
+        width: 50%;
+    }
+
+    body section .row div div div .div_backnumber {
+        width: 25px;
     }
 }
 
@@ -1988,10 +2294,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body section .section_footerborder {
         width: 107% !important;
-        bottom: -300px;        
+        bottom: -300px;
     }
-    
-    body section .section_footerborder .row div .div_footertext {
+
+    .div_footertext {
         flex-direction: column;
     }
 }

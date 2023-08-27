@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/css/index.css">
-    <title>LYNNC</title>
+    <title>LYNNC - HOME PAGE</title>
 </head>
 
 <body class="text-capitalize body_x">
@@ -275,17 +275,17 @@
         </div>
         <div class="position-absolute rounded-5 start-50 div_bottom d-flex align-items-center justify-content-center mouse_click"
             id="icon_top">
-            <img src="images/images_home/icon_bottom.svg" alt="">
+            <img src="images/images_home/icon_bottom.svg" alt="" class="image_animation">
         </div>
     </section>
     <!-- end main -->
     <!-- start carousel -->
     <section class="mt-5 pt-4 section_point position-relative">
         <div class="container">
-            <div class="row carousel slide align-items-center" id="carouselExampleIndicators">
+            <div class="row carousel slide align-items-center" id="carouselExampleIndicators4">
                 <div class="col-md-6">
                     <div class="row align-items-center mouse_click row_hover active"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true"
+                        data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" aria-current="true"
                         aria-label="Slide 1">
                         <div class="col-2">
                             <h2 class="number_carousel fw-bold">01</h2>
@@ -303,7 +303,7 @@
                     </div>
                     <div class="border_bottom my-4"></div>
                     <div class="row align-items-center mouse_click row_hover"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true"
+                        data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-current="true"
                         aria-label="Slide 2">
                         <div class="col-2">
                             <h2 class="number_carousel fw-bold">02</h2>
@@ -320,7 +320,7 @@
                     </div>
                     <div class="border_bottom my-4"></div>
                     <div class="row align-items-center mouse_click row_hover"
-                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true"
+                        data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-current="true"
                         aria-label="Slide 3">
                         <div class="col-2">
                             <h2 class="number_carousel fw-bold">03</h2>
@@ -1187,29 +1187,7 @@
 </body>
 <script src="bootstrap-5.2.2-dist/js/jquery.min.js"></script>
 <script src="bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
-<script src="bootstrap-5.2.2-dist/js/home_page.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 50,
-            },
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
+<script src="bootstrap-5.2.2-dist/js/index.js"></script>
 
 </html>
