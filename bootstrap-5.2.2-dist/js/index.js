@@ -12,12 +12,12 @@ $(document).ready(function () {
 
   $(".section_solutions").hover(
     function () {
-      $(this).parent().find(".link_color").addClass("active");
-      $("#link_color").removeClass("active");
+      $(this).parent().find(".li_link").addClass("link_active");
+      $("#link_color").removeClass("link_active");
     },
     function () {
-      $(this).parent().find(".link_color").removeClass("active");
-      $("#link_color").addClass("active");
+      $(this).parent().find(".li_link").removeClass("link_active");
+      $("#link_color").addClass("link_active");
     }
   );
 

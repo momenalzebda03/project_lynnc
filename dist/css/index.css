@@ -328,7 +328,8 @@ body header nav .container div ul {
 }
 
 body header nav .container div ul li .section_solutions {
-  top: 55px;
+  top: 53px;
+  left: 0;
   background-color: #E9F7F9;
   border-top: 3px solid #05D35D;
 }
@@ -364,40 +365,30 @@ body header .navbar .container div ul li .section_solutions ul li .text_hover:ho
   height: 100vh;
 }
 
-body header nav .container div ul .li_hover::before {
-  content: "";
-  position: absolute;
-  padding-left: 0;
-  padding-right: 0;
-  height: 3px;
-  bottom: -30px;
-  background-color: #05D35D;
-  transition: 0.5s;
+body header nav .container div ul .link_active::before {
+  width: 100% !important;
 }
 
-body header nav .container div ul .li_hover:hover::before {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-body header nav .container div ul .li_hover:hover .link_color {
+body header nav .container div ul .link_active a {
   color: #05D35D;
 }
 
-.li_active::before {
+body header nav .container div ul .li_link::before {
   content: "";
   position: absolute;
-  padding-left: 0;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  padding-right: 0;
-  height: 2px;
+  width: 0;
+  height: 4px;
   bottom: -30px;
   background-color: #05D35D;
+  transition: 0.4s;
 }
 
-body header nav .container div ul li .active {
+body header nav .container div ul .li_link:hover .link_color {
   color: #05D35D;
+}
+
+body header nav .container div ul .li_link:hover::before {
+  width: 100%;
 }
 
 body .section_main .row div .div_image:before {
@@ -853,12 +844,12 @@ body .section_main_single .bottom_single .image_bottom {
   color: #05D35D;
 }
 
-div:first-child .div_social_media {
+.div_childimage .div_social_media:first-child {
   border: 2px solid #05D35D;
   background-color: white;
 }
 
-.div_social_media {
+.div_childimage .div_social_media {
   bottom: 25px;
   right: 10px;
   width: 48px;
@@ -1766,13 +1757,11 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     width: calc(1.4 * var(--width));
     height: calc(0.9 * var(--height));
   }
-  body header nav .container div ul li .active_mobile {
-    color: #3B6064 !important;
-  }
   body header nav .container div ul li .link_color:hover {
     border-bottom: 0 solid #05D35D;
     padding-bottom: 0;
   }
+  .li_link::before,
   .div_social_media,
   body section div div .div_notnumber,
   body .section_border,
