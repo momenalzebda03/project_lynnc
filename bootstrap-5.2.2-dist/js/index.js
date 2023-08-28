@@ -209,7 +209,54 @@ $(document).ready(function () {
     });
   });
 
-  var swiper = new Swiper(".mySwiper", {
+  $("#icon_click").click(function () {
+    if (bollen) {
+      $("#icon_true").css("opacity", "0");
+      $("#icon_false").css("opacity", "1");
+      $(".div_childimage .div_social_media").each(function (index) {
+        var rightPosition = (4 - index) * 60 + 70;
+        $(this).css("right", rightPosition + "px");
+      });
+      bollen = false;
+    } else {
+      $("#icon_true").css("opacity", "1");
+      $("#icon_false").css("opacity", "0");
+      $(".div_childimage .div_social_media").each(function (index) {
+        var rightPosition = index * 0 + 10;
+        $(this).css("right", rightPosition + "px");
+      });
+      bollen = true;
+    }
+  });
+
+  $(".div_column #news").each(function () {
+    var newsText = $(this).text();
+    if (newsText === "news") {
+    } else if (newsText === "Partnership") {
+      $(this).closest(".div_new").css("background-color", "#3b60643e");
+      $(this).closest(".div_new").css("color", "#3B6064");
+    }
+  });
+
+  $(".toggle_all").click(function (event) {
+    event.stopPropagation();
+    $(".blog_hover").removeClass("active_blog");
+    $(this).addClass("active_blog");
+    if ($(this).hasClass("show")) {
+      $(this).removeClass("color_black");
+      $(".toggle_all").removeClass("new-content");
+      $(this).addClass("new-content");
+    } else {
+      $(this).addClass("color_black");
+      $(".toggle_all").removeClass("new-content");
+    }
+  });
+  $(document).click(function () {
+    $(".toggle_all").addClass("color_black");
+    $(".toggle_all").removeClass("new-content");
+  });
+
+  new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

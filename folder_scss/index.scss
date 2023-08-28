@@ -272,7 +272,6 @@ body {
 }
 
 .section_padding {
-    height: 150vh;
     padding-top: 120px;
 }
 
@@ -320,12 +319,25 @@ body {
 }
 
 .color_text {
-    color: $color_line;
+    color: $color_line !important;
 }
 
 .title_heightcolor {
-    color: $color_string_footer !important;
+    color: $color_string_footer;
     line-height: 25px;
+}
+
+.div_search {
+    background-color: $color_navbar;
+}
+
+.blog_hover:hover,
+.active_blog {
+    color: $color_products2 !important;
+}
+
+.color_black {
+    color: $color_black !important;
 }
 
 // end everyone
@@ -401,6 +413,49 @@ body header nav .container div ul .li_link:hover .link_color {
 
 body header nav .container div ul .li_link:hover::before {
     width: 100%;
+}
+
+body header nav .container div div ul li .link_home {
+    color: $color_products2;
+}
+
+body header nav .container div div ul li .dropdown-toggle:hover::after {
+    content: url("/images/images_bloc/icon_arraw1.svg") !important;
+}
+
+body header nav .container div div ul li .dropdown-toggle::after,
+body header nav .container div div ul li .new-content::after {
+    position: absolute;
+    border-top: .0em solid;
+    transition: 0.5s;
+}
+
+body header nav .container div div ul li .dropdown-toggle::after {
+    content: url("/images/images_bloc/icon_arraw.svg");
+    transform: rotate(0);
+}
+
+body header nav .container div div ul li .new-content::after {
+    content: url("/images/images_bloc/icon_arraw1.svg");
+    position: absolute;
+    transform: rotate(-180deg);
+}
+
+body header nav .container div div .all_button {
+    height: 41px !important;
+}
+
+body header nav .container div div .button_orange {
+    background-color: $color_blocgbutton;
+}
+
+body header nav .container div div .button_orange:hover img {
+    transform: translate(15px, 0);
+}
+
+body header nav .container div div .button_blue {
+    width: 41px;
+    background-color: $color_blognavbar;
 }
 
 // end navbar
@@ -717,6 +772,7 @@ body .section_main_integrations .container div .width_text {
 }
 
 body section .row div .section_color {
+    height: 1000px;
     width: 30%;
     background-color: $color_footer;
 }
@@ -872,39 +928,42 @@ body .section_main_single .bottom_single .image_bottom {
     }
 }
 
-.div_new {
+body .section_padding .row div div div .div_new {
     height: 33px;
     background-color: $color_news;
     color: $color_button_navbar;
 }
 
-.div_childimage .div_social_media:first-child {
+body .section_padding .row div div div .div_childimage .div_social_media:first-child {
     border: 2px solid $color_button_navbar;
     background-color: $color_white;
+    z-index: 1;
+    right: 10px !important;
 }
 
-.div_childimage .div_social_media {
+body .section_padding .row div div div .div_childimage .div_social_media {
+    position: relative;
     bottom: 25px;
     right: 10px;
     width: 48px;
     height: 48px;
     border: 2px solid transparent;
     background-color: $color_text_navbar;
-    position: relative;
+    transition: 0.5s;
 }
 
-.div_social_media:hover::before,
-.div_social_media:hover::after {
+body .section_padding .row div div div .div_childimage .div_social_media:hover::before,
+body .section_padding .row div div div .div_childimage .div_social_media:hover::after {
     display: block;
 }
 
-.div_social_media::before,
-.div_social_media::after {
+body .section_padding .row div div div .div_childimage .div_social_media::before,
+body .section_padding .row div div div .div_childimage .div_social_media::after {
     position: absolute;
     display: none;
 }
 
-.div_social_media::before {
+body .section_padding .row div div div .div_childimage .div_social_media::before {
     content: "copy link";
     font-size: 14px;
     text-align: center;
@@ -916,10 +975,58 @@ body .section_main_single .bottom_single .image_bottom {
     border-radius: 10px;
 }
 
-.div_social_media::after {
+body .section_padding .row div div div .div_childimage .div_social_media::after {
     content: "▼";
     top: -26px;
     color: $color_black;
+}
+
+body .margin_bottom {
+    margin-bottom: 200px;
+}
+
+body .section_padding .row div div div .div_childimage .div_social_media #icon_false,
+body .section_padding .row div div div .div_childimage .div_social_media #icon_true {
+    transition: 1s;
+}
+
+body .section_padding .row div div div .div_childimage .div_social_media #icon_false {
+    opacity: 0;
+}
+
+body .section_padding .row div div div .div_mobile {
+    width: 78px !important;
+    height: 33px !important;
+}
+
+body .section_padding .row div .div_search div .input_searchsingle {
+    padding-left: 55px;
+    box-shadow: 0 0px 5px #05d35e24;
+}
+
+body .section_padding .row div .div_search div .input_searchsingle::placeholder {
+    color: $color_point;
+}
+
+body .section_padding .row div div .div_height {
+    height: 707px;
+}
+
+body .section_padding .row div div .div_height::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+body .section_padding .row div div .div_height::-webkit-scrollbar-thumb {
+    background: $color_text_navbar;
+}
+
+body .section_padding .row div div .search_partnership {
+    width: 67%;
+}
+
+body .section_padding .row .row div .card_border {
+    border: 1px solid #d2e4e571;
 }
 
 // end main
@@ -1437,6 +1544,7 @@ body section .container .row div div .button_width {
 
 // end integrate
 // start key
+.div_block,
 body section div div .div_notnumber {
     width: 12px;
     height: 12px;
@@ -1650,6 +1758,10 @@ body section div div .row div div #form2 {
 
 // end singin2
 // start footer
+body .section_footermargin {
+    margin-top: 200px;
+}
+
 body .section_footer {
     margin-top: 150px;
     border-radius: 30px 30px 0 0;
@@ -1750,6 +1862,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         gap: 3px;
     }
 
+    .ul_gap {
+        gap: 13px !important;
+    }
+
     body header nav .container div ul .link_color {
         padding-left: 15px !important;
         padding-right: 15px !important;
@@ -1768,6 +1884,7 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         left: 8%;
     }
 
+    body .section_footer .container .div_up,
     body .section_main_single .container .row div div .div_border .after_image::after,
     body .section_main_single .container .row div div .div_border .after_image::before,
     body .section_main_single .container .row div div .div_border::after,
@@ -1782,6 +1899,24 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body .section_main .container .row div .div_center .carousel_text div .size_main {
         font-size: 20px;
+    }
+
+    body section .container .div_bottom_arraow {
+        bottom: -50px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-next,
+    body section .container .div_bottom_arraow .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-next {
+        right: 130px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-prev {
+        left: 130px;
     }
 }
 
@@ -1813,6 +1948,24 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 }
 
 @media (max-width: 990px) and (min-width: 0) {
+    body section .container .div_bottom_arraow {
+        bottom: -50px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-next,
+    body section .container .div_bottom_arraow .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-next {
+        right: 130px;
+    }
+
+    body section .container .div_bottom_arraow .swiper-button-prev {
+        left: 130px;
+    }
+
     body header {
         background-color: $color_white;
     }
@@ -1825,6 +1978,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body header nav .container div ul {
         gap: 20px;
+    }
+
+    .ul_gap {
+        gap: 10px !important;
     }
 
     body header nav .container div ul .li_overflow:hover {
@@ -1864,8 +2021,8 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         padding-bottom: 0;
     }
 
+    body .section_footer .container .div_up,
     .li_link::before,
-    .div_social_media,
     body section div div .div_notnumber,
     body .section_border,
     body .section_main_single .container .row div div .div_border .after_image::after,
@@ -2151,24 +2308,6 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         margin-right: 0px;
     }
 
-    body section .container .div_bottom_arraow {
-        bottom: -50px;
-    }
-
-    body section .container .div_bottom_arraow .swiper-button-next,
-    body section .container .div_bottom_arraow .swiper-button-prev {
-        width: 40px;
-        height: 40px;
-    }
-
-    body section .container .div_bottom_arraow .swiper-button-next {
-        right: 130px;
-    }
-
-    body section .container .div_bottom_arraow .swiper-button-prev {
-        left: 130px;
-    }
-
     body .container .div_top .section_footer_center div .row div .title_before::before,
     body .container .div_top .section_footer_center div .row div .title_before::after {
         right: -100px;
@@ -2234,6 +2373,35 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     body section .row div div div .div_backnumber {
         width: 25px;
     }
+
+    body .section_padding .row div div .div_height {
+        height: 530px;
+    }
+
+    .section_padding .row div div .div_height div .div_search div .image_mobile {
+        width: 109px;
+        height: 107px;
+    }
+
+    body .margin_bottom {
+        margin-bottom: -100px;
+    }
+
+    body section .row div .section_color {
+        height: auto;
+    }
+
+    body .section_footermargin {
+        margin-top: 0;
+    }
+
+    body .footer_container .div_top {
+        top: 80px;
+    }
+
+    body .section_footer {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 770px) and (min-width: 0) {
@@ -2244,10 +2412,6 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body section .row div .padding_mobile {
         padding-top: 25px !important;
-    }
-
-    .section_padding {
-        height: auto;
     }
 
     body section .row div .padding_mobile .hr_width {
@@ -2266,6 +2430,11 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     .div_footertext {
         flex-direction: column;
+    }
+
+    body header nav .container div div ul li .dropdown-toggle::after,
+    body header nav .container div div ul li .new-content::after {
+        right: 0;
     }
 }
 
@@ -2294,6 +2463,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body .section_main_integrations {
         height: 95vh;
+    }
+
+    body .section_padding .row div .div_height div .div_search div .div_column {
+        flex-direction: column;
     }
 }
 
