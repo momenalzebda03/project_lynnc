@@ -238,8 +238,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".toggle_all").click(function (event) {
-    event.stopPropagation();
+  $(".toggle_all").click(function () {
     $(".blog_hover").removeClass("active_blog");
     $(this).addClass("active_blog");
     if ($(this).hasClass("show")) {
@@ -251,9 +250,11 @@ $(document).ready(function () {
       $(".toggle_all").removeClass("new-content");
     }
   });
-  $(document).click(function () {
-    $(".toggle_all").addClass("color_black");
-    $(".toggle_all").removeClass("new-content");
+  $(document).on("click", function (e) {
+    if (!$(e.target).hasClass("toggle_all")) {
+      $(".toggle_all").addClass("color_black");
+      $(".toggle_all").removeClass("new-content");
+    }
   });
 
   new Swiper(".mySwiper", {
