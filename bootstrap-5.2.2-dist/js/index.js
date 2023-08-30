@@ -257,6 +257,56 @@ $(document).ready(function () {
     }
   });
 
+  var defaultSources = [
+    "images/images_about/lynnc3.png",
+    "images/images_about/lynnc2.png",
+    "images/images_about/lynnchome.png",
+    "images/images_about/lynnc2.png",
+    "images/images_about/lynnc3.png",
+  ];
+
+  setInterval(function () {
+    var imageElements = $(".image_lynnc");
+    if (imageElements.length > 0) {
+      imageElements.eq(0).attr("src", "images/images_about/lynnc1.png");
+      setTimeout(() => {
+        imageElements.eq(0).attr("src", "images/images_about/lynnchome.png");
+        imageElements.eq(4).attr("src", "images/images_about/lynnchome.png");
+      }, 50);
+      setTimeout(() => {
+        imageElements.eq(0).attr("src", "images/images_about/lynnc1.png");
+        imageElements.eq(4).attr("src", "images/images_about/lynnc1.png");
+      }, 100);
+      imageElements.eq(1).attr("src", "images/images_about/lynnc3.png");
+      setTimeout(() => {
+        imageElements.eq(1).attr("src", "images/images_about/lynnchome.png");
+        imageElements.eq(3).attr("src", "images/images_about/lynnchome.png");
+      }, 1800);
+      setTimeout(() => {
+        imageElements.eq(1).attr("src", "images/images_about/lynnc3.png");
+        imageElements.eq(3).attr("src", "images/images_about/lynnc3.png");
+      }, 1850);
+      imageElements.eq(3).attr("src", "images/images_about/lynnc3.png");
+      imageElements.eq(4).attr("src", "images/images_about/lynnc1.png");
+      setTimeout(() => {
+        imageElements.eq(1).attr("src", "images/images_about/lynnc2.png");
+        imageElements.eq(3).attr("src", "images/images_about/lynnc2.png");
+        imageElements.eq(2).attr("src", "images/images_about/lynnc3.png");
+        setTimeout(() => {
+          imageElements.eq(2).attr("src", "images/images_about/lynnchome.png");
+        }, 5000);
+        setTimeout(() => {
+          imageElements.eq(2).attr("src", "images/images_about/lynnc3.png");
+        }, 5050);
+        setTimeout(() => {
+          for (var i = 0; i < imageElements.length; i++) {
+            imageElements.eq(i).attr("src", defaultSources[i]);
+          }
+        }, 2000);
+      }, 2000);
+    }
+  }, 5000);
+
   new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
