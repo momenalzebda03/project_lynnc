@@ -26,6 +26,7 @@ body {
     transition: 0.5s;
 }
 
+body .section_table .container div>div:nth-child(4) .title_table,
 .span_color {
     color: $color_button_navbar;
 }
@@ -153,6 +154,7 @@ body {
     right: -10px;
 }
 
+.link_button:hover .button_select,
 .link_button:hover .size_button {
     color: $color_button_navbar !important;
 }
@@ -251,12 +253,14 @@ body {
     z-index: 2;
 }
 
+body .section_table .container div>div:nth-child(odd) .link_button,
 .button_overrite {
     background-color: $color_text_navbar;
 }
 
+body .section_table .container div>div:nth-child(3) .title_table,
 .span_online {
-    color: $color_text_navbar;
+    color: $color_text_navbar !important;
 }
 
 .input_search {
@@ -397,6 +401,22 @@ body .section_child:nth-child(even) .row {
 
 .button_main1 {
     width: 250px;
+}
+
+.text_left {
+    transition: 0.5s;
+}
+
+.text_left:hover {
+    margin-left: 20px;
+}
+
+.color_key {
+    color: $color_key;
+}
+
+.arraow_all {
+    opacity: 0;
 }
 
 // end everyone
@@ -613,10 +633,6 @@ body .section_main .row div div .div_mouse::before {
 
 body .section_main .container .row div div .div_mouse .div_arraow {
     margin-top: 130px;
-}
-
-body .section_main .container .row div div .div_mouse .div_arraow .arraow_all {
-    opacity: 0;
 }
 
 body .section_main .container .row div div .div_mouse .div_arraow .arraow1 {
@@ -1117,6 +1133,41 @@ body section .row div div .box_width {
 }
 
 // end offer
+// start table
+.section_table {
+    margin-top: 70px;
+}
+
+.div_table {
+    background-color: #E6F2F3 !important;
+    width: 422px !important;
+}
+
+.button_table::before {
+    background-color: $color_white !important;
+    top: 8px;
+    border-radius: 10px !important;
+    height: 82%;
+    left: var(--before_left, 2%) !important;
+    background-color: $color_white;
+}
+
+.button_monthly {
+    color: $color_button_navbar;
+}
+
+.text_month {
+    font-size: 13px;
+}
+
+body .section_table .container div>div:nth-child(2) .title_table {
+    color: $color_key;
+}
+
+body .section_table .container div>div:nth-child(5) .title_table {
+    color: $color_black;
+}
+// end table
 // start form
 body .section_form form div div .input_color {
     background-color: $color_navbar;
@@ -1701,10 +1752,6 @@ body section div div .div_notnumber {
     background-color: $color_button_navbar;
 }
 
-body section div div .color_key {
-    color: $color_key;
-}
-
 // end key
 // start testmonials
 body section .section_bottom_1 {
@@ -1840,13 +1887,13 @@ body section div div .row div div div .div_rounded_point {
     }
 }
 
-body section div div .row div div .color_button {
+.color_button {
     width: 94%;
     background-color: $color_login;
     border-radius: 15px;
 }
 
-body section div div .row div div .color_button::before {
+.color_button::before {
     content: "";
     border-radius: var(--before_border, 10px 0 0 10px);
     background-color: $color_text_navbar;
@@ -1858,17 +1905,17 @@ body section div div .row div div .color_button::before {
     left: var(--before_left, 0);
 }
 
-body section div div .row div div div .button_login {
+.button_login {
     color: $color_white;
 }
 
-body section div div .row div div .button_all {
+.button_all {
     z-index: 1;
     background-color: transparent;
     width: 50%;
 }
 
-.widht_input {
+body section div div .row div div form .widht_input {
     width: 93%;
 }
 
@@ -2668,6 +2715,10 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     body header nav .container div ul .section_solutions:hover,
     body header nav .container div ul .div_section_block:hover~.section_solutions {
         border-top: 0 solid $color_button_navbar;
+    }
+
+    .div_table {
+        width: 100% !important;
     }
 }
 

@@ -24,6 +24,7 @@ body {
   transition: 0.5s;
 }
 
+body .section_table .container div > div:nth-child(4) .title_table,
 .span_color {
   color: #05D35D;
 }
@@ -143,6 +144,7 @@ body {
   right: -10px;
 }
 
+.link_button:hover .button_select,
 .link_button:hover .size_button {
   color: #05D35D !important;
 }
@@ -241,12 +243,14 @@ body {
   z-index: 2;
 }
 
+body .section_table .container div > div:nth-child(odd) .link_button,
 .button_overrite {
   background-color: #3B6064;
 }
 
+body .section_table .container div > div:nth-child(3) .title_table,
 .span_online {
-  color: #3B6064;
+  color: #3B6064 !important;
 }
 
 .input_search {
@@ -387,6 +391,22 @@ body .section_child:nth-child(even) .row {
 
 .button_main1 {
   width: 250px;
+}
+
+.text_left {
+  transition: 0.5s;
+}
+
+.text_left:hover {
+  margin-left: 20px;
+}
+
+.color_key {
+  color: #4B4B4B;
+}
+
+.arraow_all {
+  opacity: 0;
 }
 
 body header {
@@ -596,10 +616,6 @@ body .section_main .row div div .div_mouse::before {
 }
 body .section_main .container .row div div .div_mouse .div_arraow {
   margin-top: 130px;
-}
-
-body .section_main .container .row div div .div_mouse .div_arraow .arraow_all {
-  opacity: 0;
 }
 
 body .section_main .container .row div div .div_mouse .div_arraow .arraow1 {
@@ -1083,6 +1099,40 @@ body .section_main_single .container .row div div div .row_width {
 body section .row div div .box_width {
   box-shadow: 0 0 10px rgba(127, 133, 142, 0.3333333333);
   width: 367px;
+}
+
+.section_table {
+  margin-top: 70px;
+}
+
+.div_table {
+  background-color: #E6F2F3 !important;
+  width: 422px !important;
+}
+
+.button_table::before {
+  background-color: white !important;
+  top: 8px;
+  border-radius: 10px !important;
+  height: 82%;
+  left: var(--before_left, 2%) !important;
+  background-color: white;
+}
+
+.button_monthly {
+  color: #05D35D;
+}
+
+.text_month {
+  font-size: 13px;
+}
+
+body .section_table .container div > div:nth-child(2) .title_table {
+  color: #4B4B4B;
+}
+
+body .section_table .container div > div:nth-child(5) .title_table {
+  color: black;
 }
 
 body .section_form form div div .input_color {
@@ -1631,10 +1681,6 @@ body section div div .div_notnumber {
   background-color: #05D35D;
 }
 
-body section div div .color_key {
-  color: #4B4B4B;
-}
-
 body section .section_bottom_1 {
   bottom: 500px !important;
 }
@@ -1759,13 +1805,13 @@ body section div div .row div div div .div_rounded_point {
     outline: 12px solid #05D35D;
   }
 }
-body section div div .row div div .color_button {
+.color_button {
   width: 94%;
   background-color: #F1F1F1;
   border-radius: 15px;
 }
 
-body section div div .row div div .color_button::before {
+.color_button::before {
   content: "";
   border-radius: var(--before_border, 10px 0 0 10px);
   background-color: #3B6064;
@@ -1777,17 +1823,17 @@ body section div div .row div div .color_button::before {
   left: var(--before_left, 0);
 }
 
-body section div div .row div div div .button_login {
+.button_login {
   color: white;
 }
 
-body section div div .row div div .button_all {
+.button_all {
   z-index: 1;
   background-color: transparent;
   width: 50%;
 }
 
-.widht_input {
+body section div div .row div div form .widht_input {
   width: 93%;
 }
 
@@ -2472,6 +2518,9 @@ body .section_footer .container .container .row div div .footer_hover:hover {
   body header nav .container div ul .section_solutions:hover,
   body header nav .container div ul .div_section_block:hover ~ .section_solutions {
     border-top: 0 solid #05D35D;
+  }
+  .div_table {
+    width: 100% !important;
   }
 }
 @media (max-width: 770px) and (min-width: 0) {

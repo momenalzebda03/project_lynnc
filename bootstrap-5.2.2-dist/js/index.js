@@ -188,6 +188,20 @@ $(document).ready(function () {
     $form2.css("display", "none");
   });
 
+  var $buttonCreate1 = $("#button_create1");
+  var $buttonLogin1 = $("#button_login1");
+  var $colorButton1 = $("#color_button1");
+  $buttonCreate1.on("click", function () {
+    $buttonLogin1.css("color", "black");
+    $buttonCreate1.css("color", "#05D35D");
+    $colorButton1.css("--before_left", "48%");
+  });
+  $buttonLogin1.on("click", function () {
+    $buttonCreate1.css("color", "black");
+    $buttonLogin1.css("color", "#05D35D");
+    $colorButton1.css("--before_left", "2%");
+  });
+
   $(".div_number").each(function () {
     $(this).on("click", function () {
       $(".mouse_click").removeClass("div_iconsearch");
