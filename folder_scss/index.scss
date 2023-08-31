@@ -1207,6 +1207,7 @@ body .section_table .container table tbody .tr_hover td::before {
     background-color: $color_text_footer;
 }
 
+.tbodynumber tr td:first-child,
 body .section_table .container table tbody .tr_hover td:first-child {
     font-weight: bold;
 }
@@ -1231,26 +1232,64 @@ body .section_table .container table tbody tr .td_before::before {
     background-color: $color_text_footer;
 }
 
-.td_color {
+body .table_overflow table .tr_child .td_color {
     background-color: $color_text_navbar;
 }
 
-.td_colorborder {
+body .table_overflow table .tr_child td:first-child {
     border-radius: 10px 0 0 0;
-    width: 290px;
 }
 
-.td_colorborder1 {
+body .table_overflow table .tr_child td:last-child {
     border-radius: 0 10px 0 0;
-    width: 250px;
 }
 
-.div_td {
+body .table_overflow table .tr_child td:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    transform: rotate(-135deg);
+    border-left: solid 30px $color_button_navbar;
+    border-bottom: solid 30px transparent;
+    border-top: solid 30px transparent;
+    left: -5px;
+    top: -19px;
+}
+
+body .table_overflow table .tr_color {
+    background-color: $color_table;
+}
+
+body .table_overflow table tr td div .div_td:first-child {
     background-color: #DBE1E7;
 }
 
-.tr_color {
-    background-color: $color_table;
+body .table_overflow table .tbodynumber tr .color_td {
+    color: $color_texttable;
+}
+
+body .table_overflow table .tbodynumber tr:nth-child(odd) {
+    background-color: #d2e4e565;
+}
+
+body .table_overflow table .tbodynumber tr td:first-child {
+    text-align: left !important;
+    padding-left: 20px !important;
+}
+
+body .table_overflow table .tbodynumber tr:nth-last-child(2) {
+    color: $color_white;
+    background-color: $color_text_navbar !important;
+}
+
+body .table_overflow table .tbodynumber tr:last-child {
+    color: $color_white;
+    background-color: $color_button_navbar;
+}
+
+body .table_overflow table .tr_child .td_color .div_tablecetner {
+    top: 400px;
 }
 
 // end table
