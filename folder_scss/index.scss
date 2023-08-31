@@ -446,6 +446,10 @@ body header nav .container div div .button_blue {
     background-color: $color_button_navbar;
 }
 
+.span_size {
+    font-size: 12px;
+}
+
 // end everyone
 // start navbar
 body header {
@@ -559,6 +563,13 @@ body .section_main .row div .div_image:before {
     position: absolute;
     width: 50%;
     height: 100vh;
+}
+
+body .section_main .row div .div_image1:before {
+    background-image: url("/images/images_home/image_main.png") !important;
+    width: 200%;
+    background-repeat: no-repeat;
+    left: 0;
 }
 
 body .section_main .row div .div_image:before {
@@ -770,7 +781,7 @@ body .section_main .container .row_bottom .col_child div .div_width div .active_
 }
 
 body .section_main .container .row_bottom .col_child div .div_width div .active_online1 {
-    color: $color_button_navbar;
+    color: $color_button_navbar !important;
 }
 
 body .section_main .container .row_bottom .col_child div .border_active::before,
@@ -808,6 +819,10 @@ body .section_main_home .div_background::before {
     height: 100vh;
     width: 100%;
     z-index: -1;
+}
+
+body .section_main_home .div_background1::before {
+    background-image: url("/images/images_request_demo/image_main.png") !important;
 }
 
 body .section_main_home .div_background .container_padding .row div div .size_main_home {
@@ -1133,6 +1148,10 @@ body .section_main_single .container .row div div div .row_width li .image_overr
 
 body .section_main_single .container .row div div div .row_width {
     width: 400px;
+}
+
+body .section_main_home .div_background1 .container_padding .row div div div .tag_step {
+    color: $color_setp;
 }
 
 // end main
@@ -2089,10 +2108,6 @@ body section div div .row div div form .widht_input .div_or::after {
     right: 205px;
 }
 
-body section div div .row div div form .widht_input div a .span_size {
-    font-size: 12px;
-}
-
 body section div div .row div div #form1 {
     display: flex;
 }
@@ -2245,6 +2260,14 @@ body section .container .row div .hr_footer {
 
 body section .container .row div div .title_right {
     margin-right: 65px;
+}
+
+.section_footerborder1 {
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.link_hover:hover {
+    color: $coloriconblue !important;
 }
 
 // end footer
@@ -2490,6 +2513,13 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         display: none !important;
     }
 
+    body .section_main .container .row div .div_image1:before {
+        display: block !important;
+        background-size: 200%;
+        width: 100%;
+        height: 550px;
+    }
+
     body .section_main .container .row div .div_image .carousel_text div .title_number {
         font-size: 60px;
     }
@@ -2619,7 +2649,7 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     .section_main .container .row div .div_image .carousel_text .carousel-item .row div .image_position {
         width: 100%;
-        height: 60vh;
+        height: 70vh !important;
         top: -20px;
         left: 0;
         position: absolute;
@@ -2631,11 +2661,8 @@ body .section_footer .container .container .row div div .footer_hover:hover {
     }
 
     body .section_main {
-        height: 69vh;
-    }
-
-    body .section_main .container_mobile .image_responsve div .div_image .carousel_text .div_height_res {
-        height: 60vh;
+        overflow-y: visible;
+        height: 60vh !important;
     }
 
     body .section_point .container .row .col div div .title_line {
@@ -2883,6 +2910,19 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body header .div_width_navbar .size_navbar {
         font-size: 10px;
+    }
+
+    body .section_main .container_mobile .image_responsve .div_image .carousel_text .div_height_res .div_rowbottom {
+        margin-bottom: 100px;
+    }
+
+    body .section_point1 {
+        margin-top: 150px !important;
+    }
+
+    body .section_main_home .div_background1::before {
+        background-image: url("/images/images_request_demo/image_main.png") !important;
+        height: 150vh;
     }
 }
 
