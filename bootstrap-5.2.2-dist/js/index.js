@@ -321,6 +321,15 @@ $(document).ready(function () {
     }
   }, 5000);
 
+  var $colorRangeInputs = $(".textColorRange");
+  var $paragraphs = $(".span_size");
+  $colorRangeInputs.on("input", function () {
+    var textColorValue = $(this).val();
+    var textColor = "rgb(" + textColorValue + ", 0, 0)";
+    var index = $colorRangeInputs.index(this);
+    $paragraphs.eq(index).css("color", textColor);
+  });
+
   new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",

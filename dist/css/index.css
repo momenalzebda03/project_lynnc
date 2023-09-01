@@ -16,6 +16,8 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.overrite_hover:hover div h4,
+.overrite_hover:hover div h5,
 .color_links {
   color: #3B6064;
 }
@@ -438,6 +440,13 @@ body header nav .container div div .button_blue {
 
 .span_size {
   font-size: 12px;
+}
+
+.border_orders::before {
+  content: url("/images/images_home/line_order.svg");
+  position: absolute;
+  bottom: -28px;
+  right: 0;
 }
 
 body header {
@@ -1123,6 +1132,27 @@ body .section_main_single .container .row div div div .row_width {
 
 body .section_main_home .div_background1 .container_padding .row div div div .tag_step {
   color: #D4D4D4;
+}
+
+body .section_main_home .div_background .container_padding .row div div .div_scrollback::-webkit-scrollbar {
+  width: 5px;
+}
+
+body .section_main_home .div_background .container_padding .row div div .div_scrollback::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+}
+
+body .section_main_home .div_background .container_padding .row div div .div_scrollback {
+  background-color: rgba(255, 255, 255, 0.2941176471);
+  height: 500px;
+}
+
+body .section_main_home .div_background .container_padding .row div div .div_scrollback div .button_overrite div div .href_button {
+  font-size: 10px;
+}
+
+body .section_main_home .div_background .container_padding .row div div .div_scrollback div .overrite_hover:hover {
+  background-color: white;
 }
 
 body section .row div div .box_width {
@@ -2711,9 +2741,15 @@ body .section_footer .container .container .row div div .footer_hover:hover {
   body .section_point1 {
     margin-top: 150px !important;
   }
+  body .section_main_home .div_background2::before {
+    height: 100vh !important;
+  }
   body .section_main_home .div_background1::before {
     background-image: url("/images/images_request_demo/image_main.png") !important;
     height: 150vh;
+  }
+  body .section_main_home .div_background .container_padding .row div div .div_scrollback {
+    height: 200px;
   }
 }
 @media (max-width: 770px) and (min-width: 0) {
