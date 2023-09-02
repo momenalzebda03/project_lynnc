@@ -1858,7 +1858,11 @@ body section .container .row div:nth-child(odd) .div_border_card {
     color: $color_text_navbar;
 }
 
-body .section_point .container .row .div_child .div_border_card div:last-child .size_card {
+body .section_point .container .row .div_child:nth-child(even) .div_border_card {
+    border: 0px solid transparent !important;
+}
+
+body .section_point .container .row .div_child .div_border_card div:nth-last-child(2) .size_card {
     border: none !important;
 }
 

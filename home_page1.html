@@ -373,9 +373,9 @@
                             </div>
                             <div
                                 class="d-flex align-items-center align-items-lg-end pb-5 element_height div_height_res">
-                                <div
-                                    class="div_rowbottom d-flex row_bottom align-items-start align-items-lg-center rounded-4 position-relative">
-                                    <div class="col-6 col-lg-3 col_child col_child_1">
+                                <ul
+                                    class="list-unstyled div_rowbottom d-flex row_bottom align-items-start align-items-lg-center rounded-4 position-relative">
+                                    <li class="col-6 col-lg-3 col_child col_child_1">
                                         <div class="position-relative active_image d-flex align-items-center mouse_click"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                             aria-current="true" aria-label="Slide 1">
@@ -394,8 +394,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-lg-3 col_child col_child_1">
+                                    </li>
+                                    <li class="col-6 col-lg-3 col_child col_child_1">
                                         <div class="position-relative d-flex align-items-center mouse_click"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                             aria-current="true" aria-label="Slide 2">
@@ -414,8 +414,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-lg-3 col_child col_child_1">
+                                    </li>
+                                    <li class="col-6 col-lg-3 col_child col_child_1">
                                         <div class="position-relative d-flex align-items-center mouse_click"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                             aria-current="true" aria-label="Slide 3">
@@ -434,8 +434,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6 col-lg-3 col_child col_child_1">
+                                    </li>
+                                    <li class="col-6 col-lg-3 col_child col_child_1">
                                         <div class="position-relative d-flex align-items-center mouse_click"
                                             data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                                             aria-current="true" aria-label="Slide 4">
@@ -454,8 +454,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -519,7 +519,7 @@
         <div class="container">
             <div class="row carousel slide align-items-center" id="carouselExampleIndicators4">
                 <div class="col-md-6">
-                    <div class="row align-items-center mouse_click row_hover active"
+                    <div class="row align-items-center mouse_click row_hover active border_bottom py-4"
                         data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" aria-current="true"
                         aria-label="Slide 1">
                         <div class="col-2">
@@ -536,8 +536,7 @@
                             <h3 class="title_size">Aggregate all your online orders</h3>
                         </div>
                     </div>
-                    <div class="border_bottom my-4"></div>
-                    <div class="row align-items-center mouse_click row_hover"
+                    <div class="row align-items-center mouse_click row_hover border_bottom py-4"
                         data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-current="true"
                         aria-label="Slide 2">
                         <div class="col-2">
@@ -553,8 +552,7 @@
                             <h3 class="title_size">update all your online menus</h3>
                         </div>
                     </div>
-                    <div class="border_bottom my-4"></div>
-                    <div class="row align-items-center mouse_click row_hover"
+                    <div class="row align-items-center mouse_click row_hover border_bottom py-4"
                         data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-current="true"
                         aria-label="Slide 3">
                         <div class="col-2">
@@ -570,30 +568,23 @@
                             <h3 class="title_size">insightful analytics and reporting</h3>
                         </div>
                     </div>
-                    <div class="border_bottom my-4"></div>
                 </div>
                 <div class="col-md-6">
-                    <div class="carousel-inner">
-                        <div class="text-center text-md-end carousel-item active">
-                            <div class="position-relative">
-                                <img src="images/images_home/image_back.png" alt=""
-                                    class="position-absolute image_carousel">
-                            </div>
-                            <img src="images/images_home/image_desktop.png" alt="" class="size_carousel">
+                    <div class="mt-5">
+                        <div class="position-relative text-md-center me-md-5 pe-md-2">
+                            <img src="images/images_home/image_back.png" alt=""
+                                class="position-absolute image_carousel">
                         </div>
-                        <div class="text-center text-md-end carousel-item">
-                            <div class="position-relative">
-                                <img src="images/images_home/image_back.png" alt=""
-                                    class="position-absolute image_carousel">
+                        <div class="carousel-inner">
+                            <div class="text-center text-md-end carousel-item active">
+                                <img src="images/images_home/image_desktop.png" alt="" class="size_carousel">
                             </div>
-                            <img src="images/images_home/image_analytics.png" alt="" class="size_carousel">
-                        </div>
-                        <div class="text-center text-md-end carousel-item">
-                            <div class="position-relative">
-                                <img src="images/images_home/image_back.png" alt=""
-                                    class="position-absolute image_carousel">
+                            <div class="text-center text-md-end carousel-item">
+                                <img src="images/images_home/image_analytics.png" alt="" class="size_carousel">
                             </div>
-                            <img src="images/images_home/image_food.png" alt="" class="size_carousel">
+                            <div class="text-center text-md-end carousel-item">
+                                <img src="images/images_home/image_food.png" alt="" class="size_carousel">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -974,8 +965,6 @@
                                 <h6 class="fw-bold">Additional Fees per Order</h6>
                                 <h5 class="fw-bold size_card pb-4 border-bottom border-2">0.4125 SAR</h5>
                             </div>
-                        </div>
-                        <div class="mt-4 text-center">
                             <a href="#"
                                 class="overflow-hidden w-100 button_card link_button position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
                                 <span class="text-white fw-bold size_button">Bay Now</span>
@@ -1004,8 +993,6 @@
                                     <h6 class="fw-bold">Additional Fees per Order</h6>
                                     <h5 class="fw-bold size_card pb-4 border-bottom border-2">0.4125 SAR</h5>
                                 </div>
-                            </div>
-                            <div class="mt-4 text-center">
                                 <a href="#"
                                     class="overflow-hidden w-100 button_card link_button position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
                                     <span class="text-white fw-bold size_button">Bay Now</span>
@@ -1033,8 +1020,6 @@
                                 <h6 class="fw-bold">Additional Fees per Order</h6>
                                 <h5 class="fw-bold size_card pb-4 border-bottom border-2">0.4125 SAR</h5>
                             </div>
-                        </div>
-                        <div class="mt-4 text-center">
                             <a href="#"
                                 class="overflow-hidden w-100 button_card link_button position-relative d-flex align-items-center rounded-3 justify-content-center text-decoration-none">
                                 <span class="text-white fw-bold size_button">Bay Now</span>
