@@ -247,6 +247,14 @@ body .section_table .container table thead tr>th:nth-child(4) .title_table,
     background-color: $color_button_navbar;
 }
 
+.div_arraow_1:hover .icon_hover_none {
+    display: none !important;
+}
+
+.div_arraow_1:hover .icon_hover_block {
+    display: block !important;
+}
+
 .link_footer_color {
     color: $color_string_footer;
 }
@@ -356,16 +364,6 @@ body .section_table .container table thead tr>th:nth-child(3) .title_table,
     color: $color_button_navbar;
 }
 
-.background_image {
-    background-color: $color_blognavbar;
-    width: 47px;
-    height: 47px;
-}
-
-.background_image:hover {
-    background-color: #ffc401c8;
-}
-
 .title_bold {
     color: $color_blognavbar;
 }
@@ -386,20 +384,12 @@ body .section_table .container table thead tr>th:nth-child(3) .title_table,
     font-size: 40px;
 }
 
-body .section_child:nth-child(odd) .div_startandend {
-    text-align: right;
-}
-
-body .section_child:nth-child(even) .div_startandend {
-    text-align: left;
-}
-
-body .section_child:nth-child(odd) .row {
-    flex-direction: row;
-}
-
-body .section_child:nth-child(even) .row {
+.section_reverse {
     flex-direction: row-reverse;
+}
+
+.div_start {
+    text-align: left;
 }
 
 .button_main1 {
@@ -437,10 +427,6 @@ body .section_child:nth-child(even) .row {
 .image_hover:hover img,
 .button_orange:hover img {
     transform: translate(10px, 0);
-}
-
-body header nav .container div div .button_blue {
-    width: 41px;
 }
 
 .div_backnumber {
@@ -566,6 +552,10 @@ body header .div_width_navbar {
 
 // end navbar
 // start main
+body .section_arraow_height {
+    height: 90vh;
+}
+
 body .section_main .row div .div_image:before {
     content: "";
     background-size: 50% 100vh;
@@ -823,9 +813,9 @@ body .section_main .container .row div .carousel {
 body .section_main_home .div_background::before {
     content: "";
     background-image: url("/images/images_home/background_image_main.png");
-    background-size: 100% 100vh;
+    background-size: 100% 90vh;
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     z-index: -1;
 }
@@ -879,7 +869,7 @@ body .section_main_integrations .container .title_main {
     font-size: 60px;
 }
 
-body .section_main_integrations .container div .width_text {
+body .section_main_integrations .container .width_text {
     width: 883px;
 }
 
@@ -913,6 +903,7 @@ body section .row div .padding_mobile .hr_width div .div_video {
     background-color: $color_text_navbar;
     width: 107px;
     height: 107px;
+    display: flex;
 }
 
 body .section_main_single {
@@ -1448,7 +1439,7 @@ body .section_top200 .div_backblue div div .tag_size_your {
 
 // end take
 // start fillter
-body section .row div div div div input[type=checkbox] {
+body section .row div div form div input[type=checkbox] {
     width: 30px;
     height: 30px;
     border-radius: 35%;
@@ -1457,7 +1448,7 @@ body section .row div div div div input[type=checkbox] {
     -webkit-appearance: none;
 }
 
-body section .row div div div div input[type=checkbox]:checked {
+body section .row div div form div input[type=checkbox]:checked {
     background-image: url("/images/images_Integrations/icon_true.svg");
     background-size: 70%;
     background-repeat: no-repeat;
@@ -1465,7 +1456,7 @@ body section .row div div div div input[type=checkbox]:checked {
     border: 1px solid $color_text_navbar;
 }
 
-body section .row div div div div input[type=checkbox]:checked+label {
+body section .row div div form div input[type=checkbox]:checked+label {
     color: $color_text_navbar;
     font-weight: bold;
 }
@@ -1733,11 +1724,7 @@ body .section_point .container .div_child div div div .text_height {
     line-height: 30px;
 }
 
-body .section_point .container .div_child:nth-child(even) {
-    flex-direction: row;
-}
-
-body .section_point .container .div_child:nth-child(odd) {
+body .section_point .container .flex_reverse {
     flex-direction: row-reverse;
 }
 
@@ -1920,6 +1907,23 @@ body .section_card .row_gap div .card_border:hover {
     border: 0;
 }
 
+body .section_card .row_gap div .card_border::before {
+    content: "";
+    background-image: url("/images/images_integrations_single/image_background.png");
+    background-size: 100% 100%;
+    z-index: -1;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+body .section_card .row_gap div .card_border:hover::before {
+    display: block;
+}
+
 body .section_card .row_gap div .card_border:hover .image_color {
     display: block !important;
     left: 0;
@@ -1946,11 +1950,19 @@ body section .container .row div div .button_width {
 
 // end integrate
 // start key
-.div_block,
-body section div div .div_notnumber {
+.color_key1::before {
+    top: 9px !important;
+}
+
+.color_key::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 5px;
+    background-color: $color_button_navbar;
     width: 12px;
     height: 12px;
-    background-color: $color_button_navbar;
 }
 
 // end key
@@ -2163,7 +2175,10 @@ body .section_footer {
 }
 
 body .section_footer .div_up {
-    transform: translate(-22px, -40px);
+    right: 20px;
+    bottom: 30px;
+    display: none;
+    z-index: 99999;
 }
 
 body .section_footer .div_up .arraow_footer {
@@ -2307,7 +2322,7 @@ body section .container .row div div .title_right {
 // end footer
 // start footer center
 body .footer_container .div_top {
-    top: 180px;
+    top: 140px;
 }
 
 body .container .div_top .section_footer_center::before {
@@ -2319,44 +2334,40 @@ body .container .div_top .section_footer_center::before {
     height: 203px;
 }
 
-body .container .div_top .section_footer_center div .row div .title_before {
+body .footer_container .div_top .section_footer_center .container div div .title_before {
     font-size: 30px;
 }
 
-body .container .div_top .section_footer_center div .row div .title_before::before,
-body .container .div_top .section_footer_center div .row div .title_before::after {
+body .footer_container .div_top .section_footer_center .container div div .title_before::before,
+body .footer_container .div_top .section_footer_center .container div div .title_before::after {
     content: "";
     position: absolute;
     background-color: $color_white;
     right: -120px;
 }
 
-body .container .div_top .section_footer_center div .row div .title_before::before {
+body .footer_container .div_top .section_footer_center .container div div .title_before::before {
     width: 80px;
     height: 2px;
     top: 50%;
 }
 
-body .container .div_top .section_footer_center div .row div .title_before::after {
+body .footer_container .div_top .section_footer_center .container div div .title_before::after {
     width: 10px;
     height: 10px;
     top: 13px;
     border-radius: 50%;
 }
 
-body .container .div_top .section_footer_center div .row div .title_footer {
+body .footer_container .div_top .section_footer_center .container div div .title_footer {
     color: #E0E0E0;
 }
 
-body .container .div_top .section_footer_center div .row div div .button_size {
+body .container .div_top .section_footer_center div div div .button_size {
     width: 248px;
     height: 48px;
     background-color: $color_button_navbar;
     z-index: 1;
-}
-
-body .section_footer .container .container .row div div .footer_hover:hover {
-    color: $color_products2;
 }
 
 // end footer center
@@ -2528,6 +2539,7 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         padding-bottom: 0;
     }
 
+    .border_orders::before,
     body .section_top200 .div_backblue div div .div_bakcimage::before,
     body .section_footer .div_up,
     body header nav .container div ul .li_link::before,
@@ -2623,7 +2635,7 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body .section_main_home .div_background::before,
     body .section_main_home {
-        height: 700px;
+        height: 700px !important;
     }
 
     body .blog_padding {
@@ -2857,6 +2869,11 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         padding-top: 100px !important;
     }
 
+    .section_mainmobile {
+        padding-top: 50px !important;
+        height: 800px !important;
+    }
+
     body .section_main_integrations .container .title_main {
         font-size: 25px;
     }
@@ -2946,10 +2963,6 @@ body .section_footer .container .container .row div div .footer_hover:hover {
         font-size: 10px;
     }
 
-    body .section_main .container_mobile .image_responsve .div_image .carousel_text .div_height_res .div_rowbottom {
-        margin-bottom: 100px;
-    }
-
     body .section_point1 {
         margin-top: 150px !important;
     }
@@ -2965,6 +2978,15 @@ body .section_footer .container .container .row div div .footer_hover:hover {
 
     body .section_main_home .div_background .container_padding .row div div .div_scrollback {
         height: 200px;
+    }
+
+    body .container .div_top .section_footer_center::before {
+        background-size: 100% 220px;
+        height: 220px;
+    }
+
+    body .footer_container .div_top .section_footer_center .container div div .title_before::after {
+        top: 8px;
     }
 }
 
