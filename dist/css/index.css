@@ -374,14 +374,6 @@ body .section_table .container table thead tr > th:nth-child(3) .title_table,
   font-size: 40px;
 }
 
-.section_reverse {
-  flex-direction: row-reverse;
-}
-
-.div_start {
-  text-align: left;
-}
-
 .button_main1 {
   width: 250px;
 }
@@ -433,6 +425,24 @@ body .section_table .container table thead tr > th:nth-child(3) .title_table,
   position: absolute;
   bottom: -28px;
   right: 0;
+}
+
+.section_leftright .row_reverse {
+  flex-direction: row-reverse;
+}
+.section_leftright .div_end {
+  text-align: right;
+}
+
+.flex_horizutel {
+  flex-wrap: wrap;
+}
+.flex_horizutel li {
+  width: 50%;
+}
+
+.flex_vertiquel li {
+  width: 100%;
 }
 
 body header {
@@ -806,7 +816,12 @@ body .section_main_home .div_background .container_padding .row div div .size_ma
 }
 
 body .section_main_home .div_background .container_padding .row div div .size_main_home::before {
-  content: url("/images/images_home/icon_top.svg");
+  content: "";
+  background-image: url("/images/images_home/icon_top.svg");
+  background-position: right 0px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
   position: absolute;
   right: 25px;
   top: -60px;
@@ -1072,16 +1087,16 @@ body .section_padding .row div .div_search div .input_searchsingle::placeholder 
   color: #bababa;
 }
 
-body .section_padding .row div div .div_height {
+body .section_padding .row div .div_height {
   height: 707px;
 }
 
-body .section_padding .row div div .div_height::-webkit-scrollbar {
+body .section_padding .row div .div_height::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-body .section_padding .row div div .div_height::-webkit-scrollbar-thumb {
+body .section_padding .row div .div_height::-webkit-scrollbar-thumb {
   background: #3B6064;
 }
 
@@ -1480,11 +1495,6 @@ body .section_point:nth-child(even):before {
   right: 0;
 }
 
-body .section_point .container .row div div div div .image_carousel {
-  z-index: -1;
-  right: 130px;
-}
-
 body .section_point .container .row div div div .size_carousel {
   width: 300px;
   height: 300px;
@@ -1656,10 +1666,6 @@ body .section_point .container .div_child div div div .text_height {
   line-height: 30px;
 }
 
-body .section_point .container .flex_reverse {
-  flex-direction: row-reverse;
-}
-
 body .section_bottom {
   bottom: 800px;
   z-index: -1;
@@ -1676,14 +1682,6 @@ body .section_bottom .div_clice::after {
   position: absolute;
   left: 0;
   top: 50px;
-}
-
-body .section_point .container .div_child:nth-child(even) .div_rounded {
-  border-radius: 20px 0 0 20px;
-}
-
-body .section_point .container .div_child:nth-child(odd) .div_rounded {
-  border-radius: 0 20px 20px 0;
 }
 
 body .section_point div .row_overflow .row div:nth-child(odd) .image_background,
@@ -1887,6 +1885,10 @@ body section .container .row div div .button_width {
   background-color: #05D35D;
   width: 12px;
   height: 12px;
+}
+
+body .section_testmonials {
+  border-bottom: 5px solid rgba(135, 135, 135, 0.4392156863);
 }
 
 body section .section_bottom_1 {
@@ -2489,8 +2491,11 @@ body .container .div_top .section_footer_center div div div .button_size {
     font-size: 34.2px;
   }
   body .section_main_home .div_background .container_padding .row div div .size_main_home::before {
-    right: 0;
-    top: -70px;
+    background-image: url("/images/images_home/icon_top.svg");
+    background-size: 70% 70%;
+    background-position: 100px 10px;
+    width: 50%;
+    height: 50%;
   }
   body .section_main_home .div_background::before,
   body .section_main_home {
@@ -2504,6 +2509,9 @@ body .container .div_top .section_footer_center div div div .button_size {
   }
   body .section_point .container .row div .row_hover div .number_carousel {
     font-size: 40px;
+  }
+  body .section_carouselmobile {
+    margin-top: 150px !important;
   }
   body .section_point .container .row div .div_icon {
     width: 49px;
@@ -2532,9 +2540,10 @@ body .container .div_top .section_footer_center div div div .button_size {
     width: 45px;
     height: 55px;
   }
-  body .section_point .container .row div div div div .image_carousel {
+  body .section_point .container .row div div div .image_carousel {
     width: 181.55px;
     height: 161.4;
+    left: 20%;
   }
   .section_main .container .row div .div_image .carousel_text .carousel-item {
     position: absolute;
@@ -2584,7 +2593,7 @@ body .container .div_top .section_footer_center div div div .button_size {
     width: 350%;
     height: 1.7px;
     top: 50%;
-    left: 0px;
+    left: 4px;
     border: 2px dashed rgba(59, 96, 100, 0.5843137255);
     z-index: -1;
   }
@@ -2602,7 +2611,7 @@ body .container .div_top .section_footer_center div div div .button_size {
     left: 0 !important;
   }
   body .section_point div .row_overflow .row div:nth-child(3n+1) .image_background::before {
-    left: -30px;
+    left: -20px;
   }
   body .section_point div .row_overflow .row div:nth-child(3n) .image_background::after {
     content: "";
@@ -2712,10 +2721,10 @@ body .container .div_top .section_footer_center div div div .button_size {
   .div_backnumber {
     width: 25px;
   }
-  body .section_padding .row div div .div_height {
+  body .section_padding .row div .div_height {
     height: 530px;
   }
-  .section_padding .row div div .div_height div .div_search div .image_mobile {
+  .section_padding .row div .div_height div .div_search div .image_mobile {
     width: 109px;
     height: 107px;
   }
@@ -2774,6 +2783,9 @@ body .container .div_top .section_footer_center div div div .button_size {
   }
   body .footer_container .div_top .section_footer_center .container div div .title_before::after {
     top: 8px;
+  }
+  body .section_testmonials {
+    border-bottom: 0 solid rgba(135, 135, 135, 0.4392156863);
   }
 }
 @media (max-width: 770px) and (min-width: 0) {
